@@ -1,0 +1,1525 @@
+@import url("https://fonts.googleapis.com/css?family=Fondamento|Metamorphous|Noto+Sans|Stoke|Ubuntu+Mono");
+body {
+  margin: 0;
+  font-size: 12pt;
+  background-color: #fdf1dc;
+  font-family: "Noto Sans", "Calibri", sans-serif; }
+  body a, body a:hover, body a:active {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: inherit; }
+  body #media_ident {
+    display: none;
+    list-style-type: none; }
+
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+    background-image: url("../../res/pages/paper.jpg");
+    background-size: 8.5in 11in; }
+  body {
+    font-size: 11pt;
+    background-color: transparent; }
+    body #media_ident {
+      list-style-type: disc !important; } }
+body #heading {
+  height: 3.78em;
+  padding-left: 1em;
+  background-image: url("../../res/com/akatosh_side.png");
+  background-repeat: no-repeat;
+  background-position: 30em 0;
+  background-color: white;
+  overflow: visible;
+  white-space: nowrap;
+  min-width: 800px; }
+  body #heading a {
+    margin: 0;
+    font-size: 300%;
+    font-family: "Fondamento", serif;
+    font-variant: small-caps;
+    color: #7a200d;
+    cursor: pointer;
+    -webkit-user-select: none;
+    font-weight: bold;
+    overflow: visible; }
+  body #heading a:hover {
+    color: #3c1710; }
+
+body #content[min-width~="1080px"] #sidebar {
+  display: none; }
+
+body #content {
+  background-color: #fdf1dc;
+  padding: 5px;
+  /* ------------------------------ SIDEBAR STYLES ------------------------------ */ }
+  body #content #sidebar {
+    float: right;
+    width: 250px;
+    min-height: 450px;
+    margin: 5px;
+    display: none;
+    background-image: url("../../res/com/akatosh_up.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: calc(100% - 20px) 120px; }
+
+span.select2-dropdown {
+  outline: none;
+  border: none;
+  border-bottom: 0.2em solid #bbbbbb; }
+  span.select2-dropdown li.select2-results__option--highlighted {
+    background-color: #7a200d !important; }
+
+#content #header {
+  background-color: black;
+  background-image: url("../../res/backs/imperial_city.png");
+  background-repeat: no-repeat;
+  background-position: 50% -100px;
+  height: 400px;
+  min-width: 800px;
+  position: relative;
+  box-shadow: inset 0 0 10px #000000; }
+  #content #header div {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    display: inline-block;
+    font-family: "Noto Sans", "Calibri", sans-serif;
+    cursor: default;
+    -webkit-user-select: none;
+    padding: 0 5px 0 5px; }
+  #content #header div.main {
+    font-size: 300%;
+    height: 60px;
+    line-height: 60px; }
+  #content #header div.sub {
+    font-size: 150%;
+    height: 30px;
+    line-height: 30px; }
+
+body #sidenav::-webkit-scrollbar {
+  display: none; }
+
+body #sidenav {
+  display: block;
+  height: auto;
+  position: fixed;
+  top: 110px;
+  left: -20em;
+  overflow-y: auto;
+  font-family: "Noto Sans", "Calibri", sans-serif;
+  z-index: 3;
+  color: #7a200d;
+  direction: rtl;
+  padding-right: 2em;
+  width: 20em;
+  -moz-transition: left 0.4s;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s; }
+  body #sidenav nav.container {
+    display: block;
+    direction: ltr;
+    padding-bottom: 10em; }
+    body #sidenav nav.container div a {
+      -moz-transition: color 0.4s;
+      -webkit-transition: color 0.4s;
+      transition: color 0.4s;
+      -moz-transition: background-color 0.4s;
+      -webkit-transition: background-color 0.4s;
+      transition: background-color 0.4s; }
+    body #sidenav nav.container div a.dummy {
+      display: none; }
+    body #sidenav nav.container div a.lv1 {
+      color: #fdf1dc;
+      display: block;
+      font-size: 100%;
+      line-height: 125%;
+      border-color: #7a200d;
+      padding-top: 0.35em;
+      padding-bottom: 0.35em;
+      padding-left: 0.3em;
+      padding-right: 0.1em;
+      cursor: pointer;
+      background-color: #7a200d;
+      margin-right: 0.4em; }
+    body #sidenav nav.container div a.lv1.parent {
+      font-size: 140%;
+      margin-right: 0;
+      border-top: 0.1em solid rgba(0, 0, 0, 0.15); }
+    body #sidenav nav.container div a.lv1:hover {
+      background-color: #3c1710; }
+    body #sidenav nav.container div a.lv2 {
+      display: block;
+      font-size: 105%;
+      margin-right: 0.4em;
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+      padding-left: 2em;
+      padding-right: 2em;
+      text-indent: -1em;
+      cursor: pointer;
+      border-right: 0.02em solid #7a200d;
+      background-color: #fdf1dc; }
+    body #sidenav nav.container div a.lv2.first {
+      border-top: none; }
+    body #sidenav nav.container div a.lv2.restart {
+      border-top: 0.02em solid #7a200d; }
+    body #sidenav nav.container div a.lv2.last {
+      border-bottom: none; }
+    body #sidenav nav.container div a.lv2.parent {
+      border-bottom: 0.2em solid #7a200d; }
+    body #sidenav nav.container div a.lv2.last.end {
+      border-bottom: 0.02em solid #7a200d; }
+    body #sidenav nav.container div a.lv2:hover {
+      background-color: #dac7ab; }
+    body #sidenav nav.container div a.lv3 {
+      display: block;
+      font-size: 90%;
+      margin-right: 1em;
+      padding-top: 0.11em;
+      padding-bottom: 0.11em;
+      padding-left: 2em;
+      padding-right: 2em;
+      cursor: pointer;
+      background-color: #fce7cb;
+      border-right: 0.02em solid #7a200d;
+      color: black; }
+    body #sidenav nav.container div a.lv3.first {
+      padding-top: 0.5em; }
+    body #sidenav nav.container div a.lv3.last {
+      padding-bottom: 0.5em; }
+    body #sidenav nav.container div a.lv3.last.end {
+      padding-bottom: 0.5em;
+      border-bottom: 0.02em solid #7a200d; }
+    body #sidenav nav.container div a.lv3:hover {
+      background-color: #c6bba4;
+      color: #7a200d; }
+
+body #sidenav:hover {
+  left: 0; }
+
+body #navbar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #7a200d;
+  overflow: visible;
+  box-shadow: 0px 2px 5px #3c1710;
+  z-index: 4;
+  min-width: 816px;
+  /*END LINKS*/ }
+  body #navbar nav.links {
+    height: 100%;
+    float: left; }
+    body #navbar nav.links span.link {
+      color: #fdf1dc;
+      z-index: 3;
+      background-color: #7a200d;
+      border-bottom-style: none;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      font-weight: normal;
+      font-size: 115%;
+      float: left;
+      position: relative;
+      outline: none;
+      -moz-transition: background-color 0.4s;
+      -webkit-transition: background-color 0.4s;
+      transition: background-color 0.4s; }
+      body #navbar nav.links span.link a {
+        color: #fdf1dc;
+        white-space: nowrap;
+        display: block;
+        height: 20px;
+        padding: 15px 15px 15px 15px; }
+      body #navbar nav.links span.link div.tooltip {
+        visibility: hidden;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #3c1710;
+        min-width: 30px;
+        min-height: 30px;
+        padding: 10px;
+        column-count: 2;
+        font-weight: normal;
+        opacity: 0;
+        -moz-transition: visibility 0.4s;
+        -webkit-transition: visibility 0.4s;
+        transition: visibility 0.4s;
+        -moz-transition: opacity 0.4s;
+        -webkit-transition: opacity 0.4s;
+        transition: opacity 0.4s; }
+        body #navbar nav.links span.link div.tooltip a {
+          padding: 0;
+          height: auto; }
+        body #navbar nav.links span.link div.tooltip a:hover, body #navbar nav.links span.link div.tooltip a:active {
+          color: #e9bca7; }
+    body #navbar nav.links span.link.home {
+      height: 40px;
+      width: 30px;
+      display: block;
+      float: left;
+      padding: 5px;
+      background-image: url("../../res/com/home_icon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      border: none; }
+      body #navbar nav.links span.link.home a {
+        height: 40px;
+        width: 30px;
+        display: block;
+        padding: 0; }
+    body #navbar nav.links span.link:hover, body #navbar nav.links span.link:focus {
+      background-color: #3c1710; }
+      body #navbar nav.links span.link:hover div.tooltip, body #navbar nav.links span.link:focus div.tooltip {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1; }
+    body #navbar nav.links span.link.active {
+      background-color: #903523; }
+      body #navbar nav.links span.link.active div.tooltip {
+        background-color: #903523; }
+    body #navbar nav.links gap {
+      display: inline-block;
+      width: 10px;
+      height: 45px;
+      float: left; }
+
+body #content #main {
+  margin: 5px;
+  overflow: hidden;
+  min-height: 50px;
+  min-width: 800px;
+  padding-bottom: 10em;
+  /* ------------------------------ FLOAT STYLES ------------------------------ */
+  /* ------------------------------ CHAPTER SELECT STYLES ------------------------------ */ }
+  body #content #main div.selection_bar {
+    width: 48em;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-bottom: 0.1em solid #7a200d;
+    border-top: 0.1em solid #7a200d; }
+    body #content #main div.selection_bar a {
+      color: #7a200d;
+      font-family: "Stoke", "Constantia", serif;
+      font-size: 110%;
+      padding: 0.6em;
+      -moz-transition: color 0.4s;
+      -webkit-transition: color 0.4s;
+      transition: color 0.4s;
+      -moz-transition: background-color 0.4s;
+      -webkit-transition: background-color 0.4s;
+      transition: background-color 0.4s;
+      max-width: 45%; }
+    body #content #main div.selection_bar a:hover {
+      background-color: #7a200d;
+      color: #fdf1dc; }
+    body #content #main div.selection_bar a.last {
+      padding-right: 1.2em;
+      float: left; }
+    body #content #main div.selection_bar a.next {
+      padding-left: 1.2em;
+      float: right; }
+  body #content #main section {
+    width: 48em;
+    padding: 0.6em;
+    margin: 0 auto;
+    display: block;
+    /* ------------------------------ ALIGNMENT STYLES ------------------------------ */ }
+    body #content #main section a.anchor {
+      position: relative;
+      visibility: hidden;
+      top: -2.2em;
+      display: inline-block; }
+    body #content #main section .bred {
+      color: #7a200d; }
+    body #content #main section .lal {
+      display: block;
+      text-align: left; }
+    body #content #main section .ral {
+      display: block;
+      text-align: right; }
+    body #content #main section .cal {
+      display: block;
+      text-align: center; }
+  body #content #main .fl {
+    float: left; }
+  body #content #main .fr {
+    float: right; }
+  body #content #main .fg {
+    height: 10px;
+    width: 1em; }
+  body #content #main .clearer {
+    clear: both; }
+  body #content #main .clearr {
+    clear: right; }
+  body #content #main .clearl {
+    clear: left; }
+  body #content #main div.link_chunk {
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: #7a200d; }
+    body #content #main div.link_chunk a.chsel {
+      display: block;
+      position: relative; }
+      body #content #main div.link_chunk a.chsel div.imgholder {
+        display: block;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding: -0.1em 0em -0.1em 0em;
+        opacity: 1;
+        background-color: #fdf1dc;
+        -moz-transition: opacity 0.4s;
+        -webkit-transition: opacity 0.4s;
+        transition: opacity 0.4s; }
+      body #content #main div.link_chunk a.chsel p {
+        z-index: 3;
+        position: relative;
+        margin: 0;
+        padding: 0.5em;
+        color: #7a200d;
+        font-size: 150%;
+        font-family: "Metamorphous", serif;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #fdf1dc, #fdf1dc, transparent);
+        -moz-transition: color 0.4s;
+        -webkit-transition: color 0.4s;
+        transition: color 0.4s;
+        -moz-transition: background-color 0.4s;
+        -webkit-transition: background-color 0.4s;
+        transition: background-color 0.4s;
+        -moz-transition: background-image 0.4s;
+        -webkit-transition: background-image 0.4s;
+        transition: background-image 0.4s; }
+    body #content #main div.link_chunk a.chsel:hover p {
+      color: white;
+      font-weight: normal;
+      background-color: rgba(0, 0, 0, 0.3);
+      background-image: none; }
+    body #content #main div.link_chunk a.chsel:hover div.imgholder {
+      opacity: 1; }
+
+/*END MAIN*/
+body #content #main section h1 {
+  margin: 0;
+  margin-top: 0.5em;
+  font-size: 250%;
+  font-family: "Stoke", "Constantia", serif;
+  font-variant: small-caps;
+  color: #7a200d;
+  cursor: default;
+  -webkit-user-select: none;
+  font-weight: bold;
+  page-break-after: avoid; }
+  body #content #main section h1 a.anchor {
+    display: block;
+    top: -2.2em; }
+body #content #main section h1 + p {
+  text-indent: 0px; }
+body #content #main section h2 {
+  margin: 0px;
+  font-size: 150%;
+  font-family: "Metamorphous", serif;
+  color: #7a200d;
+  border-bottom: 0.2em solid #7a200d;
+  cursor: default;
+  -webkit-user-select: none;
+  font-weight: bold;
+  margin-top: 1em;
+  page-break-after: avoid; }
+  body #content #main section h2 a.anchor {
+    display: block;
+    top: -2.2em; }
+body #content #main section h2 + p {
+  text-indent: 0px;
+  margin-top: 0.3em; }
+body #content #main section h3 {
+  font-family: "Stoke", "Constantia", serif;
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+  page-break-after: avoid;
+  font-variant: small-caps; }
+  body #content #main section h3 a.anchor {
+    display: block;
+    top: -2.2em; }
+body #content #main section h3 + p {
+  text-indent: 0px;
+  margin-top: 0.3em; }
+body #content #main section h4 {
+  font-family: "Metamorphous", serif;
+  font-size: 1em;
+  text-decoration: none;
+  margin-bottom: 0em;
+  font-weight: bold;
+  font-style: italic;
+  page-break-after: avoid; }
+body #content #main section h4 + p {
+  text-indent: 0px;
+  margin-top: 0.3em; }
+body #content #main section h5 {
+  font-family: "Metamorphous", serif;
+  font-size: 0.8em;
+  text-decoration: none;
+  margin-bottom: 0.3em;
+  margin-top: 0;
+  font-style: italic;
+  page-break-after: avoid;
+  color: #7a200d; }
+
+body #content #main section span.u {
+  text-decoration: underline; }
+body #content #main section span.calc, body #content #main section p.calc {
+  font-family: "Ubuntu Mono", monospace;
+  text-indent: 0;
+  font-weight: bold; }
+body #content #main section span.npc {
+  display: inline;
+  font-weight: bold;
+  font-style: italic;
+  color: #7a200d;
+  position: relative; }
+body #content #main section span.loc {
+  display: inline;
+  font-style: italic;
+  text-decoration: underline;
+  color: #7a200d;
+  position: relative; }
+body #content #main section span.quest {
+  display: inline;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline; }
+body #content #main section span.enemy {
+  display: inline;
+  font-weight: bold;
+  letter-spacing: -0.1em;
+  color: #7a200d; }
+body #content #main section span.item {
+  font-style: italic; }
+body #content #main section span.enc {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 111%;
+  color: #7a200d; }
+body #content #main section span.loot {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 111%;
+  color: #1A7400; }
+body #content #main section p {
+  text-indent: 1em;
+  margin-bottom: 0.3em;
+  widows: 2;
+  orphans: 2; }
+  body #content #main section p a {
+    color: #7a200d;
+    text-decoration: underline; }
+  body #content #main section p span.mono {
+    font-family: "Ubuntu Mono", monospace; }
+body #content #main section p.uind {
+  text-indent: 0; }
+body #content #main section p.calc {
+  text-align: center; }
+body #content #main section em {
+  color: #7a200d;
+  font-style: italic;
+  font-weight: bold; }
+body #content #main section footnote, body #content #main section p.footnote {
+  font-family: "Fondamento", serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  display: block; }
+body #content #main section footnote.remark, body #content #main section p.footnote.remark {
+  margin-top: 0;
+  font-family: "Noto Sans", "Calibri", sans-serif;
+  font-size: 0.7em;
+  font-weight: normal; }
+body #content #main section quote, body #content #main section p.quote {
+  display: inline-block;
+  border: 0.2em solid #7a200d;
+  color: #7a200d;
+  font-family: "Stoke", "Constantia", serif;
+  font-style: italic;
+  font-weight: bold;
+  page-break-inside: avoid;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-indent: 1em;
+  padding: 0.5em; }
+body #content #main section p.quote.short {
+  display: table;
+  margin: auto;
+  text-indent: 0px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center; }
+body #content #main section note, body #content #main section p.note {
+  display: inline-block;
+  border: 0.2em solid #999999;
+  color: #999999;
+  font-size: 1em;
+  font-style: italic;
+  page-break-inside: avoid;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em; }
+body #content #main section p.note.red {
+  border: 0.2em solid #903523;
+  color: #903523; }
+body #content #main section div.racebox {
+  width: 31em; }
+body #content #main section div.loot_holder span {
+  margin-left: 1em; }
+body #content #main section hr {
+  background-image: linear-gradient(to right, #7a200d, transparent);
+  border: none;
+  height: 0.2em; }
+
+body #content #main section *.die {
+  color: black !important;
+  display: inline;
+  font-weight: bold; }
+body #content #main section *.dmg {
+  text-decoration: underline !important;
+  color: #cc0000 !important; }
+body #content #main section *.dmg.acid {
+  color: #B3BD1A !important; }
+body #content #main section *.dmg.cold {
+  color: #207F86 !important; }
+body #content #main section *.dmg.fire {
+  color: #FF7E0F !important; }
+body #content #main section *.dmg.force {
+  color: #EF4010 !important; }
+body #content #main section *.dmg.lightning {
+  color: #B149EA !important; }
+body #content #main section *.dmg.necro {
+  color: #661A1A !important; }
+body #content #main section *.dmg.poison {
+  color: #5AB417 !important; }
+body #content #main section *.dmg.psychic {
+  color: #B41771 !important; }
+body #content #main section *.dmg.rad {
+  color: #48E5A7 !important; }
+body #content #main section *.dmg.thun {
+  color: #486AE5 !important; }
+body #content #main section *.dmg.slash, body #content #main section *.dmg.bludge, body #content #main section *.dmg.pierce {
+  color: #999999 !important; }
+body #content #main section *.heal {
+  font-style: italic !important;
+  text-decoration: underline !important;
+  color: #00cc00 !important; }
+body #content #main section *.heal.tmp {
+  text-decoration: none !important; }
+
+body #content #main div.tablewrap {
+  margin-top: 1em;
+  text-align: center; }
+  body #content #main div.tablewrap table {
+    border: 0.3em solid #7a200d;
+    border-collapse: collapse;
+    text-indent: 0px;
+    display: table;
+    font-size: 85%;
+    margin: auto;
+    max-width: 85%;
+    overflow-x: hidden; }
+    body #content #main div.tablewrap table caption {
+      background-color: #7a200d;
+      color: white;
+      font-weight: bold;
+      border-top: 0.2em solid #7a200d;
+      padding-top: 0.2em;
+      min-width: 15em; }
+    body #content #main div.tablewrap table tr th, body #content #main div.tablewrap table tr td {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      margin: 0;
+      line-height: 1.3em;
+      text-align: left; }
+    body #content #main div.tablewrap table tr .center_al {
+      text-align: center;
+      white-space: nowrap; }
+    body #content #main div.tablewrap table tr .ind {
+      text-indent: 1em; }
+    body #content #main div.tablewrap table tr .remark {
+      font-size: 80%; }
+    body #content #main div.tablewrap table tr:nth-child(even) {
+      background-color: rgba(122, 32, 13, 0.15); }
+    body #content #main div.tablewrap table tr:first-child {
+      background-color: #7a200d;
+      color: white; }
+  body #content #main div.tablewrap table.cblock tr:not(:first-child) {
+    background-color: transparent; }
+  body #content #main div.tablewrap table.cblock tr:not(:first-child).colored {
+    background-color: rgba(122, 32, 13, 0.15); }
+body #content #main div.tablewrap.full table {
+  width: 85%;
+  margin: 0 auto;
+  display: table; }
+body #content #main div.tablewrap.moff {
+  display: inline-block; }
+  body #content #main div.tablewrap.moff table {
+    margin: 0;
+    margin-left: 1em; }
+
+body #content #main ul {
+  width: auto;
+  overflow: hidden;
+  margin-left: 1em;
+  padding-left: 0;
+  list-style-type: none;
+  font-style: italic;
+  font-size: 90%; }
+  body #content #main ul li {
+    padding-left: 1em;
+    text-indent: -1em; }
+  body #content #main ul li.heading {
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 0;
+    text-indent: 0; }
+  body #content #main ul li.doubleind {
+    padding-left: 2em; }
+body #content #main ul.untabbed {
+  margin-left: 0; }
+body #content #main ul.bulletted {
+  list-style-type: square;
+  list-style-position: outside;
+  font-size: 95%;
+  overflow: visible;
+  margin-left: 1.5em;
+  margin-right: 2.5em; }
+  body #content #main ul.bulletted li {
+    text-indent: -1em; }
+body #content #main ul.loot, body #content #main ul.diffs {
+  font-size: 90%;
+  margin: 0;
+  margin-left: 2.5em;
+  margin-right: 2.5em; }
+body #content #main ul.loot {
+  color: #1A7400; }
+body #content #main ul.diffs {
+  color: #7a200d; }
+
+body #content #main section imagebox, body #content #main section div.imagebox {
+  margin-top: 1em;
+  padding: 0.3em;
+  text-align: center;
+  display: block;
+  page-break-inside: avoid;
+  border: 0.15em solid #7a200d; }
+  body #content #main section imagebox img, body #content #main section div.imagebox img {
+    display: block;
+    width: 100%; }
+body #content #main section imagebox.half, body #content #main section div.imagebox.half {
+  margin: 0, 0.2em, 0, 0.2em;
+  width: 47%; }
+body #content #main section imagebox.third, body #content #main section div.imagebox.third {
+  margin-right: 1em;
+  margin-left: 1em;
+  width: 30%; }
+body #content #main section imagebox.fourth, body #content #main section div.imagebox.fourth {
+  margin: 0, 0.2em, 0, 0.2em;
+  width: 24%; }
+body #content #main section imagebox img.viewer:hover, body #content #main section div.imagebox.fourth img.viewer:hover {
+  cursor: zoom-in; }
+
+body #content #main div.imagepair div.imgwrap {
+  width: 40%;
+  float: right; }
+body #content #main div.imagepair div.textwrap {
+  width: 56%;
+  float: left; }
+  body #content #main div.imagepair div.textwrap div.tcol {
+    display: table;
+    width: 100%; }
+    body #content #main div.imagepair div.textwrap div.tcol div {
+      display: table-cell; }
+
+body #content #main div.imagepair.imgleft div.imgwrap {
+  float: left; }
+body #content #main div.imagepair.imgleft div.textwrap {
+  float: right;
+  padding-left: 2%;
+  padding-right: 2%; }
+
+body #content #main div.searchbox {
+  z-index: 2;
+  width: 44em;
+  margin: 0 auto;
+  position: relative;
+  padding: 1em;
+  background-color: #fdf1dc;
+  font-family: "Noto Sans", "Calibri", sans-serif;
+  color: #7a200d;
+  border-radius: 0.2em;
+  box-shadow: 0 0 2em #c6bba4;
+  overflow: hidden;
+  margin-bottom: 2em;
+  line-height: inherit; }
+  body #content #main div.searchbox h1 {
+    margin-top: 0;
+    margin-bottom: 0.2em; }
+  body #content #main div.searchbox hr {
+    background-image: none;
+    background-color: #7a200d; }
+  body #content #main div.searchbox span.lbl {
+    font-weight: bold;
+    height: 100%;
+    vertical-align: top; }
+  body #content #main div.searchbox span.later {
+    margin-left: 1em; }
+  body #content #main div.searchbox div.inprow {
+    font-size: inherit;
+    margin-top: 1.2em;
+    clear: both;
+    margin-bottom: 0.2em; }
+    body #content #main div.searchbox div.inprow input.searchinp {
+      display: block;
+      box-shadow: 0 0 0.5em #c6bba4;
+      border: none;
+      font-size: inherit;
+      padding: 0.5em;
+      float: left;
+      width: 70%; }
+    body #content #main div.searchbox div.inprow input.searchinp:focus {
+      box-shadow: 0 0 0.5em #bbbbbb inset;
+      outline: none; }
+    body #content #main div.searchbox div.inprow span.select2-container {
+      margin-left: 0.5em; }
+      body #content #main div.searchbox div.inprow span.select2-container span.select2-selection {
+        border-radius: 0;
+        font-size: inherit;
+        border: none;
+        box-shadow: 0 0 0.5em #c6bba4;
+        padding: 0.2em; }
+        body #content #main div.searchbox div.inprow span.select2-container span.select2-selection ul.select2-selection__rendered li.select2-selection__choice {
+          background-color: #efe0d5;
+          border-radius: 0;
+          border: 0.1em solid #7a200d;
+          text-indent: -0.4em; }
+          body #content #main div.searchbox div.inprow span.select2-container span.select2-selection ul.select2-selection__rendered li.select2-selection__choice span.select2-selection__choice__remove {
+            color: #7a200d; }
+    body #content #main div.searchbox div.inprow button {
+      -webkit-appearance: none;
+      display: inline-block;
+      font-size: inherit;
+      box-shadow: 0 0 0.5em #c6bba4;
+      border: none;
+      padding: 0;
+      height: 2em;
+      color: #7a200d;
+      background-color: #fdf1dc;
+      cursor: pointer;
+      font-family: "Noto Sans", "Calibri", sans-serif;
+      margin-left: 1em;
+      padding: 0.1em 1em 0 1em;
+      font-weight: bold; }
+    body #content #main div.searchbox div.inprow button:hover {
+      background-color: #7a200d;
+      color: #fdf1dc; }
+    body #content #main div.searchbox div.inprow button:active {
+      box-shadow: 0 0 0.5em #c6bba4 inset; }
+    body #content #main div.searchbox div.inprow button:focus {
+      outline: none; }
+    body #content #main div.searchbox div.inprow select.lstinp {
+      font-size: inherit;
+      box-shadow: 0 0 0.5em #c6bba4;
+      border: none;
+      padding: 0.5em;
+      font-weight: bold; }
+    body #content #main div.searchbox div.inprow select.lstinp:focus {
+      box-shadow: 0 0 0.5em #bbbbbb inset;
+      outline: none; }
+
+ul.token-input-list-facebook {
+  overflow: hidden;
+  height: auto !important;
+  cursor: text;
+  min-height: 1px;
+  z-index: 999;
+  margin: 0 !important;
+  background-color: white;
+  list-style-type: none;
+  clear: left;
+  display: block;
+  box-shadow: 0 0 0.5em #bbbbbb;
+  border: none;
+  font-size: inherit;
+  float: left;
+  width: 70% !important;
+  height: 1em;
+  padding: 0.2em;
+  padding-left: 0.2em !important; }
+  ul.token-input-list-facebook li input {
+    border: 0;
+    width: 100px;
+    padding: 3px 8px;
+    background-color: white;
+    margin: 2px 0;
+    -webkit-appearance: caret; }
+
+ul.token-input-list-facebook:focus {
+  box-shadow: 0 0 0.5em #bbbbbb inset;
+  outline: none; }
+
+li.token-input-token-facebook {
+  overflow: hidden;
+  display: inline-block;
+  height: auto !important;
+  margin: 0.2em;
+  color: black;
+  cursor: default;
+  float: left;
+  white-space: nowrap;
+  background-color: #efe0d5;
+  border: 1px solid #7a200d;
+  color: #7a200d;
+  padding: 0.1em;
+  padding-right: 0.3em; }
+  li.token-input-token-facebook p {
+    display: inline;
+    padding: 0.5em;
+    margin: 0; }
+  li.token-input-token-facebook span {
+    margin-left: 5px;
+    font-weight: bold;
+    cursor: pointer; }
+
+li.token-input-selected-token-facebook {
+  background-color: #7a200d;
+  border: 1px solid #efe0d5;
+  color: white; }
+
+li.token-input-input-token-facebook {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+div.token-input-dropdown-facebook {
+  position: absolute;
+  width: 400px;
+  background-color: white;
+  overflow: hidden;
+  border: none;
+  border-bottom: 0.2em solid #bbbbbb;
+  cursor: default;
+  font-size: 90%;
+  font-family: "Noto Sans", "Calibri", sans-serif;
+  z-index: 3; }
+  div.token-input-dropdown-facebook p {
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    color: #777777; }
+  div.token-input-dropdown-facebook ul {
+    margin: 0;
+    padding: 0; }
+    div.token-input-dropdown-facebook ul li {
+      background-color: white;
+      padding: 3px;
+      margin: 0;
+      list-style-type: none; }
+      div.token-input-dropdown-facebook ul li em {
+        font-weight: bold;
+        font-style: normal; }
+    div.token-input-dropdown-facebook ul li.token-input-dropdown-item-facebook {
+      background-color: white; }
+    div.token-input-dropdown-facebook ul li.token-input-dropdown-item2-facebook {
+      background-color: white; }
+    div.token-input-dropdown-facebook ul li.token-input-selected-dropdown-item-facebook {
+      background-color: #7a200d;
+      color: white; }
+
+body #content #main #characterbox div.character .charblock {
+  width: 48em;
+  margin: 0 auto;
+  /* ------------------------------ HEADING STYLES ------------------------------ */
+  /* ------------------------------ STRUCTURE STYLES ------------------------------ */
+  /*END MIDDLE*/ }
+  body #content #main #characterbox div.character .charblock h1 {
+    font-family: "Metamorphous", serif;
+    color: inherit;
+    border-bottom: 0.15em solid #7a200d;
+    font-weight: 700;
+    font-size: 200%;
+    margin-bottom: 0.25em;
+    font-variant: small-caps;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    text-align: left;
+    width: auto; }
+  body #content #main #characterbox div.character .charblock h2 {
+    font-family: "Noto Sans", "Calibri", sans-serif;
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 90%;
+    margin: 0;
+    line-height: 1;
+    text-decoration: none;
+    text-align: left;
+    border: none;
+    width: auto;
+    margin-bottom: 1em; }
+  body #content #main #characterbox div.character .charblock h3 {
+    border-bottom: 0.08em solid #7a200d;
+    color: inherit;
+    font-size: 150%;
+    font-variant: small-caps;
+    font-weight: normal;
+    letter-spacing: 0.13em;
+    margin: 0;
+    margin-bottom: 0.3em;
+    break-inside: avoid-column;
+    break-after: avoid-column;
+    line-height: 1.1em;
+    text-decoration: none;
+    width: auto; }
+  body #content #main #characterbox div.character .charblock h4 {
+    color: inherit;
+    font-weight: bold;
+    line-height: 1.2em;
+    text-indent: -1em;
+    display: inline;
+    margin-right: 0.6em;
+    font-size: 1em; }
+  body #content #main #characterbox div.character .charblock h5 {
+    color: inherit;
+    font-weight: bold;
+    line-height: 1.2em;
+    text-indent: -1em;
+    display: inline;
+    margin-right: 0.6em;
+    font-size: 1.2em; }
+  body #content #main #characterbox div.character .charblock div.bar {
+    display: none; }
+  body #content #main #characterbox div.character .charblock div.lvl {
+    display: none; }
+  body #content #main #characterbox div.character .charblock hr.ender {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    border: 0.15em solid #7a200d;
+    height: 0;
+    background: none; }
+  body #content #main #characterbox div.character .charblock div.middle {
+    padding: 2em;
+    background-color: #fdf1dc;
+    font-family: "Noto Sans", "Calibri", sans-serif;
+    color: #7a200d;
+    border-radius: 0.2em;
+    box-shadow: 0 0 2em #c6bba4;
+    overflow: hidden;
+    font-size: 90%;
+    /* ------------------------------ PROP STYLES ------------------------------ */
+    /* ------------------------------ ABILITIES STYLES ------------------------------ */
+    /* ------------------------------ SKILLS STYLES ------------------------------ */
+    /* ------------------------------ ATTACKS STYLES ------------------------------ */
+    /* ------------------------------ SPELLIST STYLES ------------------------------ */ }
+    body #content #main #characterbox div.character .charblock div.middle div.propset {
+      margin-top: 1.5em; }
+      body #content #main #characterbox div.character .charblock div.middle div.propset p {
+        color: black;
+        text-indent: 1em; }
+      body #content #main #characterbox div.character .charblock div.middle div.propset p:nth-child(2) {
+        text-indent: 0; }
+    body #content #main #characterbox div.character .charblock div.middle div.top_props {
+      margin-top: 0; }
+    body #content #main #characterbox div.character .charblock div.middle div.prop {
+      display: block;
+      padding-left: 1em;
+      text-indent: -1em;
+      line-height: 0.9em;
+      color: black;
+      width: auto;
+      margin-bottom: 0.4em; }
+      body #content #main #characterbox div.character .charblock div.middle div.prop p {
+        display: inline;
+        text-indent: 0.5em;
+        line-height: 1.2em; }
+    body #content #main #characterbox div.character .charblock div.middle div.prop.palone {
+      text-indent: 1em;
+      margin-top: -0.4em; }
+    body #content #main #characterbox div.character .charblock div.middle div.abilities {
+      border: 0.15em solid #7a200d;
+      padding: 0.5em;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: auto; }
+      body #content #main #characterbox div.character .charblock div.middle div.abilities table {
+        width: 100%;
+        border: 0;
+        border-collapse: collapse;
+        margin-left: 0 auto; }
+        body #content #main #characterbox div.character .charblock div.middle div.abilities table th, body #content #main #characterbox div.character .charblock div.middle div.abilities table td {
+          width: 35px;
+          text-align: center;
+          line-height: 1.4em;
+          font-size: 111%;
+          border-left: 0.1em solid #7a200d; }
+        body #content #main #characterbox div.character .charblock div.middle div.abilities table th.col1, body #content #main #characterbox div.character .charblock div.middle div.abilities table td.col1 {
+          border-left: 0; }
+    body #content #main #characterbox div.character .charblock div.middle div.skills {
+      width: 40em;
+      margin: 0 auto;
+      padding-top: 1.5em; }
+      body #content #main #characterbox div.character .charblock div.middle div.skills table {
+        border: 0;
+        border-collapse: collapse;
+        border-left: 0.1em solid #7a200d; }
+        body #content #main #characterbox div.character .charblock div.middle div.skills table th, body #content #main #characterbox div.character .charblock div.middle div.skills table td {
+          color: #7a200d;
+          text-align: left;
+          line-height: 1.4em;
+          text-indent: 0;
+          white-space: nowrap;
+          font-size: 0.9em;
+          padding: 0px;
+          padding-left: 1em;
+          padding-right: 0.5em; }
+        body #content #main #characterbox div.character .charblock div.middle div.skills table th.val, body #content #main #characterbox div.character .charblock div.middle div.skills table td.val {
+          text-align: right;
+          text-indent: none;
+          padding: 0px;
+          padding-right: 1em;
+          border-right: 0.1em solid #7a200d; }
+    body #content #main #characterbox div.character .charblock div.middle div.atks div.prop {
+      padding-left: 0;
+      text-indent: 0; }
+    body #content #main #characterbox div.character .charblock div.middle div.spellist {
+      columns: 3; }
+      body #content #main #characterbox div.character .charblock div.middle div.spellist div.prop {
+        padding-top: 0.5em;
+        page-break-inside: avoid;
+        -webkit-column-break-inside: avoid; }
+        body #content #main #characterbox div.character .charblock div.middle div.spellist div.prop table {
+          border-style: none;
+          border-collapse: collapse;
+          text-indent: 0px;
+          display: inline-block;
+          width: 100%; }
+          body #content #main #characterbox div.character .charblock div.middle div.spellist div.prop table th, body #content #main #characterbox div.character .charblock div.middle div.spellist div.prop table td {
+            padding-left: 0px;
+            padding-right: 3.5px;
+            margin: 0px;
+            line-height: 1.3em;
+            text-align: left;
+            font-size: 120%; }
+        body #content #main #characterbox div.character .charblock div.middle div.spellist div.prop ul {
+          padding: 0px;
+          margin: 0px;
+          list-style-position: inside;
+          list-style-type: circle;
+          font-style: italic;
+          text-indent: 0px;
+          list-style-type: none; }
+          body #content #main #characterbox div.character .charblock div.middle div.spellist div.prop ul li {
+            line-height: 1.2em; }
+          body #content #main #characterbox div.character .charblock div.middle div.spellist div.prop ul li:before {
+            font-style: normal;
+            font-size: 150%;
+            content: '\25E6   '; }
+          body #content #main #characterbox div.character .charblock div.middle div.spellist div.prop ul li.prepped:before {
+            font-style: normal;
+            font-size: 150%;
+            content: '\2022   '; }
+        body #content #main #characterbox div.character .charblock div.middle div.spellist div.prop ul.cantrip li:before {
+          font-size: 100%;
+          content: ''; }
+
+body #content #main #characterbox #spellbox {
+  width: 46em;
+  margin: 0 auto;
+  position: relative;
+  padding: 1em;
+  background-color: #fdf1dc;
+  font-family: "Noto Sans", "Calibri", sans-serif;
+  color: #7a200d;
+  border-radius: 0.2em;
+  box-shadow: 0 0 2em #c6bba4;
+  overflow: hidden;
+  columns: 2;
+  margin-top: 3em; }
+  body #content #main #characterbox #spellbox h1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.2em solid #7a200d;
+    overflow: hidden;
+    margin-bottom: 0.5em; }
+
+body #content #main div.moblock {
+  min-height: 50pt;
+  display: block;
+  text-align: left;
+  margin-bottom: 1.5em;
+  /* ------------------------------ HEADING STYLES ------------------------------ */
+  /* ------------------------------ STRUCTURE STYLES ------------------------------ */
+  /*END MIDDLE*/ }
+  body #content #main div.moblock * {
+    padding: 0;
+    line-height: 1em;
+    z-index: 2;
+    width: 44em;
+    margin: 0 auto; }
+  body #content #main div.moblock h1 {
+    font-family: "Metamorphous", serif;
+    color: inherit;
+    border-bottom: 0.15em solid #7a200d;
+    font-weight: 700;
+    font-size: 200%;
+    margin-bottom: 0.25em;
+    font-variant: small-caps;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    text-align: left;
+    width: auto; }
+  body #content #main div.moblock h2 {
+    font-family: "Noto Sans", "Calibri", sans-serif;
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 90%;
+    margin: 0;
+    line-height: 1em;
+    text-decoration: none;
+    text-align: left;
+    border: none;
+    width: auto; }
+  body #content #main div.moblock h3 {
+    border-bottom: 0.08em solid #7a200d;
+    color: inherit;
+    font-size: 150%;
+    font-variant: small-caps;
+    font-weight: normal;
+    letter-spacing: 0.13em;
+    margin: 0;
+    margin-bottom: 0.3em;
+    break-inside: avoid-column;
+    break-after: avoid-column;
+    line-height: 1.1em;
+    text-decoration: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto; }
+  body #content #main div.moblock h4 {
+    font-family: "Stoke", "Constantia", serif;
+    color: inherit;
+    font-weight: bold;
+    line-height: 1.4em;
+    text-indent: -1em;
+    display: inline;
+    margin-right: 0.6em;
+    font-size: 1em; }
+  body #content #main div.moblock div.bar {
+    display: none; }
+  body #content #main div.moblock div.mobidname {
+    display: none; }
+  body #content #main div.moblock svg {
+    display: none; }
+  body #content #main div.moblock hr.ender {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    border: 0.15em solid #7A200D;
+    height: 0;
+    background-image: none; }
+  body #content #main div.moblock div.middle {
+    padding: 1em;
+    background-color: #fdf1dc;
+    font-family: "Noto Sans", "Calibri", sans-serif;
+    color: #7a200d;
+    border-radius: 0.2em;
+    box-shadow: 0 0 2em #c6bba4;
+    overflow: hidden;
+    /* ------------------------------ ABILITIES STYLES ------------------------------ */
+    /* ------------------------------ FEATS & ACTIONS STYLES ------------------------------ */ }
+    body #content #main div.moblock div.middle div.top_props, body #content #main div.moblock div.middle div.abilities, body #content #main div.moblock div.middle div.bot_props, body #content #main div.moblock div.middle div.feats, body #content #main div.moblock div.middle div.actions, body #content #main div.moblock div.middle div.reactions {
+      margin-top: 1.5em; }
+    body #content #main div.moblock div.middle prop {
+      display: block;
+      padding-left: 1em;
+      text-indent: -1em;
+      line-height: 0.9em;
+      color: black;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: auto; }
+      body #content #main div.moblock div.middle prop p {
+        display: inline;
+        margin-top: 0;
+        margin-bottom: 1em;
+        text-indent: 0.5em;
+        fonst-size: 100%;
+        line-height: 1.2em; }
+    body #content #main div.moblock div.middle div.abilities {
+      border: 0.15em solid #7a200d;
+      padding: 0.5em;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: auto; }
+      body #content #main div.moblock div.middle div.abilities table {
+        width: 100%;
+        border: 0;
+        border-collapse: collapse;
+        margin-left: 0 auto; }
+        body #content #main div.moblock div.middle div.abilities table th, body #content #main div.moblock div.middle div.abilities table td {
+          width: 35px;
+          text-align: center;
+          line-height: 1.4em;
+          font-size: 111%;
+          border-left: 0.1em solid #7a200d; }
+        body #content #main div.moblock div.middle div.abilities table th.col1, body #content #main div.moblock div.middle div.abilities table td.col1 {
+          border-left: 0; }
+    body #content #main div.moblock div.middle div.feats h4, body #content #main div.moblock div.middle div.actions h4 {
+      font-style: italic; }
+    body #content #main div.moblock div.middle div.feats prop, body #content #main div.moblock div.middle div.actions prop {
+      padding-left: 0px;
+      text-indent: 0px;
+      line-height: 1em;
+      color: black;
+      padding-bottom: 7px; }
+    body #content #main div.moblock div.middle div.feats prop.naked, body #content #main div.moblock div.middle div.actions prop.naked {
+      text-indent: 5px; }
+
+body #content #main .moblock.small {
+  width: auto;
+  font-size: 85%;
+  margin-bottom: 0; }
+  body #content #main .moblock.small .middle {
+    border-radius: 0;
+    box-shadow: none;
+    padding-top: 0; }
+    body #content #main .moblock.small .middle prop table {
+      width: 100%;
+      margin-left: 0; }
+  body #content #main .moblock.small hr.ender {
+    margin-bottom: 0; }
+
+body #content #main #spellbox {
+  padding: 0;
+  line-height: 1em;
+  z-index: 2;
+  width: 46em;
+  margin: 0 auto;
+  min-height: 50pt;
+  display: block;
+  text-align: left; }
+  body #content #main #spellbox * {
+    line-height: 1em; }
+  body #content #main #spellbox #spell_viewer {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    margin-left: -23em;
+    width: 46em;
+    max-height: 80%;
+    overflow-y: auto;
+    overflow-x: visible;
+    z-index: 6; }
+    body #content #main #spellbox #spell_viewer div.spellblock {
+      margin-bottom: 0em; }
+  body #content #main #spellbox #spell_mask {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.4); }
+  body #content #main #spellbox div.spellgroup {
+    padding: 1em;
+    position: relative; }
+    body #content #main #spellbox div.spellgroup a.anchor {
+      display: block;
+      position: absolute;
+      top: -6em; }
+    body #content #main #spellbox div.spellgroup h3 {
+      font-size: 110%;
+      text-decoration: none;
+      margin-top: 0;
+      border-bottom: 0.1em solid #c6bba4; }
+    body #content #main #spellbox div.spellgroup ul {
+      columns: 3;
+      margin-top: 0;
+      position: relative; }
+      body #content #main #spellbox div.spellgroup ul li {
+        line-height: 1.2em;
+        display: block;
+        color: #888; }
+        body #content #main #spellbox div.spellgroup ul li a {
+          color: #7a200d;
+          text-decoration: none;
+          cursor: pointer; }
+        body #content #main #spellbox div.spellgroup ul li a:hover {
+          text-decoration: underline; }
+      body #content #main #spellbox div.spellgroup ul a.anchor {
+        display: block;
+        position: absolute;
+        top: -6em; }
+  body #content #main #spellbox div.spellblock {
+    -webkit-column-break-inside: avoid;
+    margin-bottom: 1.5em;
+    /* ------------------------------ STRUCTURE STYLES ------------------------------ */
+    /*END MIDDLE*/ }
+    body #content #main #spellbox div.spellblock div.bar {
+      display: none; }
+    body #content #main #spellbox div.spellblock hr.ender {
+      display: block;
+      margin-bottom: 0.5em;
+      margin-top: 2em;
+      border: 0.15em solid #7a200d;
+      height: 0;
+      background-image: none; }
+    body #content #main #spellbox div.spellblock div.middle {
+      position: relative;
+      padding: 1em;
+      background-color: #FDF1DC;
+      font-family: "Noto Sans", "Calibri", sans-serif;
+      color: #7a200d;
+      box-shadow: 0 0 2em #c6bba4;
+      overflow: hidden;
+      /* ------------------------------ HEADING STYLES ------------------------------ */
+      /* ------------------------------ BLOCK STYLES ------------------------------ */ }
+      body #content #main #spellbox div.spellblock div.middle h1 {
+        font-family: "Metamorphous", serif;
+        color: inherit;
+        border-bottom: 0.15em solid #7a200d;
+        font-weight: 700;
+        font-size: 200%;
+        margin-bottom: 0.25em;
+        font-variant: small-caps;
+        letter-spacing: 0.07em;
+        text-decoration: none;
+        text-align: left;
+        width: auto; }
+      body #content #main #spellbox div.spellblock div.middle h2 {
+        font-family: "Noto Sans", "Calibri", sans-serif;
+        display: block;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 90%;
+        margin: 0;
+        line-height: 1;
+        text-decoration: none;
+        text-align: left;
+        border: none;
+        width: auto; }
+      body #content #main #spellbox div.spellblock div.middle h3 {
+        border-bottom: 0.08em solid #7a200d;
+        color: inherit;
+        font-size: 150%;
+        font-variant: small-caps;
+        font-weight: normal;
+        letter-spacing: 0.13em;
+        margin: 0;
+        margin-bottom: 0.3em;
+        break-inside: avoid-column;
+        break-after: avoid-column;
+        line-height: 1.1em;
+        text-decoration: none;
+        width: auto; }
+      body #content #main #spellbox div.spellblock div.middle h4 {
+        color: inherit;
+        font-weight: bold;
+        line-height: 1.4em;
+        text-indent: -1em;
+        display: inline;
+        margin-right: 0.6em;
+        font-size: 1em; }
+      body #content #main #spellbox div.spellblock div.middle div.spellidname {
+        display: none; }
+      body #content #main #spellbox div.spellblock div.middle div.lvl {
+        display: none; }
+      body #content #main #spellbox div.spellblock div.middle svg {
+        display: none; }
+      body #content #main #spellbox div.spellblock div.middle div.propsec {
+        margin-top: 1.5em; }
+        body #content #main #spellbox div.spellblock div.middle div.propsec prop, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop {
+          display: block;
+          text-indent: 1em;
+          line-height: 0.9em;
+          color: black;
+          width: auto;
+          /* ------------------------------ LIST STYLES ------------------------------ */ }
+          body #content #main #spellbox div.spellblock div.middle div.propsec prop p, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop p {
+            display: block;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            text-indent: 0.5em;
+            fonst-size: 100%;
+            line-height: 1.2em; }
+          body #content #main #spellbox div.spellblock div.middle div.propsec prop h4 + p, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop h4 + p {
+            display: inline; }
+          body #content #main #spellbox div.spellblock div.middle div.propsec prop ul, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop ul {
+            list-style-type: none;
+            font-style: italic;
+            color: black;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            text-indent: -1.5em; }
+            body #content #main #spellbox div.spellblock div.middle div.propsec prop ul li, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop ul li {
+              line-height: 1.2em; }
+            body #content #main #spellbox div.spellblock div.middle div.propsec prop ul li:before, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop ul li:before {
+              content: "\2022   "; }
+          body #content #main #spellbox div.spellblock div.middle div.propsec prop ul.dashed, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop ul.dashed {
+            font-style: normal; }
+            body #content #main #spellbox div.spellblock div.middle div.propsec prop ul.dashed li:before, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop ul.dashed li:before {
+              content: '\2014   '; }
+          body #content #main #spellbox div.spellblock div.middle div.propsec prop table, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop table {
+            border-style: none;
+            border-collapse: collapse;
+            text-indent: 0px;
+            margin: 0;
+            display: table;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            width: 36em;
+            margin-left: 4em; }
+            body #content #main #spellbox div.spellblock div.middle div.propsec prop table tr td, body #content #main #spellbox div.spellblock div.middle div.propsec prop table tr th, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop table tr td, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop table tr th {
+              padding-left: 3.5px;
+              padding-right: 3.5px;
+              margin: 0px;
+              line-height: 1.3em;
+              text-align: left; }
+            body #content #main #spellbox div.spellblock div.middle div.propsec prop table tr .center_al, body #content #main #spellbox div.spellblock div.middle div.propsec div.prop table tr .center_al {
+              text-align: center;
+              white-space: nowrap; }
+            body #content #main #spellbox div.spellblock div.middle div.propsec prop table tr:nth-child(even), body #content #main #spellbox div.spellblock div.middle div.propsec div.prop table tr:nth-child(even) {
+              background-color: #efe0d5; }
+      body #content #main #spellbox div.spellblock div.middle div.propsec.noind prop {
+        text-indent: 0; }
+
+body #content #main #spellbox div.spellblock {
+  width: auto;
+  font-size: 85%;
+  margin-bottom: 0; }
+  body #content #main #spellbox div.spellblock div.middle {
+    border-radius: 0;
+    box-shadow: none;
+    padding-top: 0; }
+    body #content #main #spellbox div.spellblock div.middle prop table {
+      width: 100%;
+      margin-left: 0; }
+  body #content #main #spellbox div.spellblock hr.ender {
+    margin-bottom: 0; }
+
+/*# sourceMappingURL=main.css.map */

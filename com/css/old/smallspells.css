@@ -1,0 +1,15 @@
+#content #main #spellbox div.spellblock {
+  width: auto;
+  font-size: 85%;
+  margin-bottom: 0; }
+  #content #main #spellbox div.spellblock div.middle {
+    border-radius: 0;
+    box-shadow: none;
+    padding-top: 0; }
+    #content #main #spellbox div.spellblock div.middle prop table {
+      width: 100%;
+      margin-left: 0; }
+  #content #main #spellbox div.spellblock hr.ender {
+    margin-bottom: 0; }
+
+/*# sourceMappingURL=smallspells.css.map */

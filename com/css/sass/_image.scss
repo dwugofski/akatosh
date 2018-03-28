@@ -1,0 +1,32 @@
+
+body #content #main section {
+	imagebox, div.imagebox {
+		margin-top: 1em;
+		padding: 0.3em;
+		text-align: center;
+		display: block;
+		page-break-inside: avoid;
+		border: 0.15em solid $bold_red;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	imagebox.half, div.imagebox.half {
+		margin: 0, 0.2em, 0, 0.2em;
+		width: 47%;
+	}
+	imagebox.third, div.imagebox.third {
+		margin-right: 1em;
+		margin-left: 1em;
+		width: 30%;
+	}
+	imagebox.fourth, div.imagebox.fourth {
+		margin: 0, 0.2em, 0, 0.2em;
+		width: 24%;
+	}
+	imagebox img.viewer:hover, div.imagebox.fourth img.viewer:hover {
+		cursor: zoom-in;
+	}
+}

@@ -1,0 +1,31 @@
+
+@import 'colors';
+@import 'fonts';
+@import 'sizes';
+
+#heading {
+	height: 3.78em;
+	padding-left: 1em;
+	background-image: url("../../res/com/akatosh_side.png");
+	background-repeat: no-repeat;
+	background-position: 30em 0;
+	background-color: white;
+	overflow: visible;
+	white-space: nowrap;
+	min-width: $min_width;
+
+	a {
+		margin: 0;
+		font-size: 300%;
+		font-family: $note_font;
+		font-variant: small-caps;
+		color: $bold_red;
+		cursor: pointer;
+		-webkit-user-select: none; 
+		font-weight: bold;
+		overflow: visible;
+	}
+	a:hover {
+		color: $dark_red;
+	}
+}

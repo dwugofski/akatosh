@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,QAAS;EACR,OAAO,EAAE,eAAe",
+"sources": ["sidenav.scss"],
+"names": [],
+"file": "sidenav.css"
+}

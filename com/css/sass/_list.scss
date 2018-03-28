@@ -1,0 +1,56 @@
+body #content #main {
+	ul {
+		width: auto;
+		overflow: hidden;
+		margin-left: 1em;
+		padding-left: 0;
+		list-style-type: none;
+		font-style: italic;
+		font-size: 90%;
+		li {
+			padding-left: 1em;
+			text-indent: -1em;
+		}
+		li.heading {
+			font-weight: bold;
+			font-style: italic;
+			padding-left: 0;
+			text-indent: 0;
+		}
+		li.doubleind {
+			padding-left: 2em;
+		}
+	}
+
+	ul.untabbed {
+		margin-left: 0;
+	}
+	
+	ul.bulletted {
+		list-style-type: square;
+		list-style-position: outside;
+		font-size: 95%;
+		overflow: visible;
+		margin-left: 1.5em;
+		margin-right: 2.5em;
+
+		li {
+			text-indent: -1em;
+		}
+	}
+
+	ul.loot, ul.diffs {
+		// font-variant: small-caps;
+		// font-weight: bold;
+		font-size: 90%;
+		margin: 0;
+		margin-left: 2.5em;
+		margin-right: 2.5em;
+	}
+	ul.loot {
+		color: $bold_green; 
+	}
+	ul.diffs {
+		color: $bold_red; 
+	}
+}

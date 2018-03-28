@@ -1,0 +1,54 @@
+
+@import 'colors';
+@import 'fonts';
+
+*.die {
+	color: black !important;
+}
+
+*.dmg {
+	text-decoration: underline !important;
+	color: $vibrant_red !important;
+}
+*.dmg.acid {
+	color: $acid_green !important;
+}
+*.dmg.cold {
+	color: $ice_blue !important;
+}
+*.dmg.fire {
+	color: $fire_orange !important;
+}
+*.dmg.force {
+	color: $force_orange !important;
+}
+*.dmg.lightning {
+	color: $lightning_purple !important;
+}
+*.dmg.necro {
+	color: $necro_red !important;
+}
+*.dmg.poison {
+	color: $poison_green !important;
+}
+*.dmg.psychic {
+	color: $psychic_pink !important;
+}
+*.dmg.rad {
+	color: $radiant_blue !important;
+}
+*.dmg.thun {
+	color: $thunder_blue !important;
+}
+*.dmg.slash, *.dmg.bludge, *.dmg.pierce {
+	color: $grey !important;
+}
+
+*.heal {
+	font-style: italic !important;
+	text-decoration: underline !important;
+	color: $vibrant_green !important;
+}
+*.heal.tmp {
+	text-decoration: none !important;
+}

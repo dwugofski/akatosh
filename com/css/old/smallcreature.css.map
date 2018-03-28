@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,uBAAwB;EACvB,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,GAAG;EACd,aAAa,EAAE,CAAC;EAEhB,+BAAQ;IACP,aAAa,EAAE,CAAC;IAChB,UAAU,EAAE,IAAI;IAChB,WAAW,EAAE,CAAC;IAEd,0CAAW;MACV,KAAK,EAAE,IAAI;MACX,WAAW,EAAE,CAAC;EAIhB,gCAAS;IACR,aAAa,EAAE,CAAC",
+"sources": ["smallcreature.scss"],
+"names": [],
+"file": "smallcreature.css"
+}

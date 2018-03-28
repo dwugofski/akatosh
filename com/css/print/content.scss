@@ -1,0 +1,92 @@
+
+@import 'colors';
+@import 'fonts';
+
+.noprinting {
+	display: none !important;
+}
+
+div, section {
+	float: none;
+}
+
+body #content {
+	width: 100%;
+	background: none;
+	margin-top: 0 !important;
+
+	#sidebar {
+		display: none;
+	}
+
+	#main {
+		display: block;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		min-width: 0;
+
+		#header {
+			background: none;
+			width: auto;
+			height: auto;
+			border-style: none;
+			box-shadow: none;
+			overflow: visible;
+			white-space: nowrap;
+			text-align: center;
+			margin-bottom: 1em;
+
+			div {
+				overflow: hidden;
+				background-color: transparent;
+				color: $bold_red;
+				position: static;
+				display: block;
+				cursor: default;
+				-webkit-user-select: none; 
+				padding: 0;
+ 				font-weight: bold;
+			}
+			div.main {
+				font-family: $title_font;
+				font-size: 230%;
+				font-variant: small-caps;
+			}
+ 			div.sub {
+ 				font-family: $note_font;
+ 				font-size: 120%;
+ 			}
+		}
+
+		section {
+			width: auto;
+			margin: 0;
+			padding: 0;
+
+			h1, h2, h3, h4 {
+				float: none;
+				page-break-after: avoid;
+			}
+
+			h1 {
+				margin-top: 0;
+			}
+
+			h2 {
+				border: none;
+			}
+
+			div.tablewrap {
+				page-break-inside: avoid;
+			}
+
+			imagebox, div.imagebox {
+				box-shadow: none;
+			}
+		}
+		section.ocol {
+			columns: 1;
+		}
+	}
+}

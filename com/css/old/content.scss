@@ -1,0 +1,733 @@
+
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
+@import 'sizes';
+
+#content[min-width~="1080px"] #sidebar {
+	display: none;
+}
+
+#content {
+	background-color: $light_brown;
+	padding: 5px;
+
+/* ------------------------------ SIDEBAR STYLES ------------------------------ */
+	#sidebar {
+		float: right;
+		width: 250px;
+		min-height: 450px;
+		margin: 5px;
+		display: none;
+		background-image: url("../../res/com/akatosh_up.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: calc(100% - 20px) 120px;
+	}
+
+/* ------------------------------ HEADER STYLES ------------------------------ */
+	#header {
+		background-color: black;
+		background-image: url("../../res/backs/imperial_city.png");
+		background-repeat: no-repeat;
+		background-position: 50% -100px;
+		height: 400px;
+		min-width: $min_width;
+		position: relative;
+		box-shadow: inset 0 0 10px #000000;
+
+		div {
+			overflow: hidden;
+			background-color:rgba(0,0,0,0.5);
+			color: white;
+			position: absolute;
+			display: inline-block;
+			font-family: $sans_font;
+			cursor: default;
+			-webkit-user-select: none; 
+			padding: 0 5px 0 5px;
+		}
+		div.main {
+			font-size: 300%;
+			height: 60px;
+			line-height: 60px;
+		}
+		div.sub {
+			font-size: 150%;
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+
+	#main {
+		margin: 5px;
+	    overflow: hidden;
+	    min-height: 50px;
+		min-width: $min_width;
+		padding-bottom: 10em;
+
+		div.selection_bar {
+			width: 48em;
+			margin: 0 auto;
+			margin-top: 1em;
+			border-bottom: 0.1em solid $bold_red;
+			border-top: 0.1em solid $bold_red;
+
+			a {
+				color: $bold_red;
+				font-family: $serif-font;
+				font-size: 110%;
+				padding: 0.6em;
+				@include transition(color, 0.4s);
+				@include transition(background-color, 0.4s);
+				max-width: 45%;
+			}
+			a:hover {
+				background-color: $bold_red;
+				color: $light_brown;
+			}
+			a.last {
+				padding-right: 1.2em;
+				float: left;
+			}
+			a.next {
+				padding-left: 1.2em;
+				float: right;
+			}
+		}
+
+		section {
+			width: 48em;
+			padding: 0.6em;
+			margin: 0 auto;
+			display: block;
+
+			a.anchor {
+				position: relative;
+				visibility: hidden;
+				top: -2.2em;
+				display: inline-block;
+			}
+
+/* ------------------------------ HEADING STYLES ------------------------------ */
+			h1 {
+				margin: 0;
+				margin-top: 0.5em;
+				font-size: 250%;
+				font-family: $serif_font;
+				font-variant: small-caps;
+				color: $bold_red;
+				cursor: default;
+				-webkit-user-select: none; 
+				font-weight: bold;
+				page-break-after: avoid;
+
+				a.anchor {
+					display: block;
+					top: -2.2em;
+				}
+			}
+			h1 + p {
+				text-indent: 0px;
+			}
+
+			h2 {
+				margin: 0px;
+				font-size: 150%;
+				font-family: $title_font;
+				color: $bold_red;
+				border-bottom: 0.2em solid $bold_red;
+				cursor: default;
+				-webkit-user-select: none; 
+				font-weight: bold;
+				margin-top: 1em;
+				page-break-after: avoid;
+
+				a.anchor {
+					display: block;
+					top: -2.2em;
+				}
+			}
+			h2 + p {
+				text-indent: 0px;
+				margin-top: 0.3em;
+			}
+
+			h3 {
+				font-family: $serif_font;
+				font-size: 1.5em;
+				text-decoration: underline;
+				margin-bottom: 0.3em;
+				font-weight: bold;
+				page-break-after: avoid;
+				font-variant: small-caps;
+
+				a.anchor {
+					display: block;
+					top: -2.2em;
+				}
+			}
+			h3 + p {
+				text-indent: 0px;
+				margin-top: 0.3em;
+			}
+
+			h4 {
+				font-family: $title_font;
+				font-size: 1em;
+				text-decoration: none;
+				margin-bottom: 0em;
+				font-weight: bold;
+				font-style: italic;
+				page-break-after: avoid;
+			}
+			h4 + p {
+				text-indent: 0px;
+				margin-top: 0.3em;
+			}
+
+			h5 {
+				font-family: $title_font;
+				font-size: 0.8em;
+				text-decoration: none;
+				margin-bottom: 0.3em;
+				margin-top: 0;
+				font-style: italic;
+				page-break-after: avoid;
+				color: $bold_red;
+			}
+
+			.bred {
+				color: $bold_red;
+			}
+
+/* ------------------------------ IMAGE STYLES ------------------------------ */
+			imagebox, div.imagebox {
+				margin-top: 1em;
+				padding: 0.3em;
+				text-align: center;
+				display: block;
+				page-break-inside: avoid;
+				//box-shadow: 0 0 0.5em $dull_beige;
+				border: 0.15em solid $bold_red;
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+			imagebox.half, div.imagebox.half {
+				margin: 0, 0.2em, 0, 0.2em;
+				width: 47%;
+			}
+			imagebox.third, div.imagebox.third {
+				margin-right: 1em;
+				margin-left: 1em;
+				width: 30%;
+			}
+			imagebox.fourth, div.imagebox.fourth {
+				margin: 0, 0.2em, 0, 0.2em;
+				width: 24%;
+			}
+			imagebox img.viewer:hover, div.imagebox.fourth img.viewer:hover {
+				cursor: zoom-in;
+			}
+
+/* ------------------------------ ALIGNMENT STYLES ------------------------------ */
+			.lal {
+				display: block;
+				text-align: left;
+			}
+			.ral {
+				display: block;
+				text-align: right;
+			}
+			.cal {
+				display: block;
+				text-align: center;
+			}
+
+/* ------------------------------ MISC STYLES ------------------------------ */
+			span.u {
+				text-decoration: underline
+			}
+			span.calc {
+				font-family: $code_font;
+				text-indent: 0;
+				font-weight: bold;
+			}
+			npc, span.npc {
+				display: inline;
+				font-weight: bold;
+				font-style: italic;
+				color: $bold_red; 
+				position: relative;
+			}
+			loc, span.loc {
+				display: inline;
+				font-style: italic;
+				text-decoration: underline;
+				color: $bold_red;
+				position: relative;
+			}
+			quest, span.quest {
+				display: inline;
+				font-weight: bold;
+				font-style: italic;
+				text-decoration: underline;
+			}
+			enemy, span.enemy {
+				display: inline;
+				font-weight: bold;
+				letter-spacing: -0.1em;
+				color: $bold_red;
+			}
+
+			p {
+				text-indent: 1em;
+				margin-bottom: 0.3em;
+				widows: 2;
+				orphans: 2;
+
+				a {
+					color: $bold_red;
+					text-decoration: underline;
+				}
+
+				span.mono {
+					font-family: $code_font;
+				}
+			}
+			p.uind {
+				text-indent: 0;
+			}
+			p.calc {
+				@extend span.calc;
+				text-align: center;
+			}
+
+			em {
+				color: $bold_red;
+				font-style: italic;
+				font-weight: bold;
+			}
+
+			footnote, p.footnote {
+				font-family: $note_font;
+				font-size: 0.9em;
+				font-weight: bold;
+				display: block;
+			}
+			footnote.remark, p.footnote.remark {
+				margin-top: 0;
+				font-family: $sans_font;
+				font-size: 0.7em;
+				font-weight: normal;
+			}
+
+			quote, p.quote {
+				display: inline-block;
+				border: 0.2em solid $bold_red;
+				color: $bold_red;
+				font-family: $serif_font;
+				font-style: italic;
+				font-weight: bold;
+				page-break-inside: avoid;
+				margin-left: 5%;
+				margin-right: 5%;
+				margin-top: 1em;
+				margin-bottom: 1em;
+				text-indent: 1em;
+				padding: 0.5em;
+			}
+			p.quote.short {
+				display: table;
+				margin: auto;
+				text-indent: 0px;
+				margin-top: 1em;
+				margin-bottom: 1em;
+				text-align: center;
+			}
+
+			note, p.note {
+				display: inline-block;
+				border: 0.2em solid $grey;
+				color: $grey;
+				font-size: 1em;
+				font-style: italic;
+				page-break-inside: avoid;
+				margin-left: 5%;
+				margin-right: 5%;
+				margin-top: 1em;
+				margin-bottom: 1em;
+				padding: 0.5em;
+			}
+			p.note.red {
+				border: 0.2em solid $light_red;
+				color: $light_red;
+			}
+
+			div.racebox {
+				width: 31em;
+			}
+
+			hr {
+				background-image: linear-gradient(to right, $bold_red, transparent);
+				border: none;
+				height: 0.2em;
+			}
+		}
+
+/* ------------------------------ SEARCH STYLES ------------------------------ */
+
+		div.searchbox {
+			z-index: 2;
+			width: 44em;
+			margin: 0 auto;
+			position: relative;
+			padding: 1em;
+			background-color: $light_brown;
+			font-family: $sans_font;
+			color: $bold_red;
+			border-radius: 0.2em;
+			box-shadow: 0 0 2em $dull_beige;
+			overflow: hidden;
+			margin-bottom: 2em;
+			line-height: inherit;
+
+			h1 {
+				margin-top: 0;
+				margin-bottom: 0.2em;
+			}
+
+			hr {
+				background-image: none;
+				background-color: $bold_red;
+			}
+
+			span.lbl {
+				font-weight: bold;
+				height: 100%;
+				vertical-align:top;
+			}
+			span.later {
+				margin-left: 1em;
+			}
+
+			div.inprow {
+				font-size: inherit;
+				margin-top: 1.2em;
+				clear: both;
+				margin-bottom: 0.2em;
+
+				input.searchinp {
+					display: block;
+					box-shadow: 0 0 0.5em $dull_beige;
+					border: none;
+					font-size: inherit;
+					padding: 0.5em;
+					float: left;
+					width: 70%;
+				}
+				input.searchinp:focus {
+					box-shadow: 0 0 0.5em $light_grey inset;
+					outline: none;
+				}
+
+				span.select2-container {
+					margin-left: 0.5em;
+
+					span.select2-selection {
+						border-radius: 0;
+						font-size: inherit;
+						border: none;
+						box-shadow: 0 0 0.5em $dull_beige;
+						padding: 0.2em;
+
+						ul.select2-selection__rendered li.select2-selection__choice {
+							background-color: $faded_red;
+							border-radius: 0;
+							border: 0.1em solid $bold_red;
+							text-indent: -0.4em;
+
+							span.select2-selection__choice__remove {
+								color: $bold_red;
+							}
+						}
+					}
+				}
+
+				button {
+					-webkit-appearance: none;
+					display: inline-block;
+					font-size: inherit;
+					box-shadow: 0 0 0.5em $dull_beige;
+					border: none;
+					padding: 0;
+					height: 2em;
+					color: $bold_red;
+					background-color: $light_brown;
+					cursor: pointer;
+					font-family: $sans_font;
+					margin-left: 1em;
+					padding: 0.1em 1em 0 1em;
+					font-weight: bold;
+				}
+				button:hover {
+					background-color: $bold_red;
+					color: $light_brown;
+				}
+				button:active {
+					box-shadow: 0 0 0.5em $dull_beige inset;
+				}
+				button:focus {
+					outline: none;
+				}
+
+				select.lstinp {
+					font-size: inherit;
+					box-shadow: 0 0 0.5em $dull_beige;
+					border: none;
+					padding: 0.5em;
+					font-weight: bold;
+				}
+				select.lstinp:focus {
+					box-shadow: 0 0 0.5em $light_grey inset;
+					outline: none;
+				}
+			}
+		}
+
+/* ------------------------------ IMAGEPAIR STYLES ------------------------------ */
+		div.imagepair{
+
+			div.imgwrap {
+				width: 40%;
+				float: right;
+			}
+
+			div.textwrap {
+				width: 56%;
+				float: left;
+
+				div.tcol {
+					display: table;
+					width: 100%;
+
+					div {
+						display: table-cell;
+					}
+				}
+			}
+		}
+		div.imagepair.imgleft {
+
+			div.imgwrap {
+				float: left;
+			}
+
+			div.textwrap {
+				float: right;
+				padding-left: 2%;
+				padding-right: 2%;
+			}
+		}
+
+/* ------------------------------ LIST STYLES ------------------------------ */
+		ul {
+			width: auto;
+			overflow: hidden;
+			margin-left: 1em;
+			padding-left: 0;
+			list-style-type: none;
+			font-style: italic;
+			font-size: 90%;
+			li {
+				padding-left: 1em;
+				text-indent: -1em;
+			}
+			li.heading {
+				font-weight: bold;
+				font-style: italic;
+				padding-left: 0;
+				text-indent: 0;
+			}
+			li.doubleind {
+				padding-left: 2em;
+			}
+		}
+		ul.untabbed {
+			margin-left: 0;
+		}
+		ul.bulletted {
+			list-style-type: square;
+			list-style-position: outside;
+			font-size: 95%;
+			overflow: visible;
+			margin-left: 1.5em;
+			margin-right: 2.5em;
+
+			li {
+				text-indent: -1em;
+			}
+		}
+
+/* ------------------------------ TABLE STYLES ------------------------------ */
+		div.tablewrap {
+			margin-top: 1em;
+			text-align: center;
+
+			table {
+				border: 0.3em solid $bold_red;
+				border-collapse: collapse;
+				text-indent: 0px;
+				display: table;
+				font-size: 85%;
+				margin: auto;
+				max-width: 85%;
+				// box-shadow: 0 0 0.5em $dull_beige;
+				overflow-x: hidden;
+
+				caption {
+					background-color: $bold_red;
+					color: white;
+					font-weight: bold;
+					border-top: 0.2em solid $bold_red;
+					padding-top: 0.2em;
+					min-width: 15em;
+				}
+
+				tr {
+					th, td {
+						padding-left: 0.5em;
+						padding-right: 0.5em;
+						margin: 0;
+						line-height: 1.3em;
+						text-align: left;
+					}
+
+					.center_al{
+						text-align: center;
+						white-space: nowrap;
+					}
+					.ind {
+						text-indent: 1em;
+					}
+					.remark {
+						font-size: 80%;
+					}
+				}
+				tr:nth-child(even) {
+					background-color: $transp_red;
+				}
+				tr:first-child {
+					background-color: $bold_red;
+					color: white;
+				}
+			}
+			table.cblock {
+				tr:not(:first-child) {
+					background-color: transparent;
+				}
+				tr:not(:first-child).colored {
+					background-color: $transp_red;
+				}
+			}
+		}
+		div.tablewrap.full table {
+			width: 85%;
+			margin: 0 auto;
+			display: table;
+		}
+		div.tablewrap.moff {
+			display: inline-block;
+
+			table {
+				margin: 0;
+				margin-left: 1em;
+			}
+		}
+
+/* ------------------------------ FLOAT STYLES ------------------------------ */
+		.fl {
+			float: left;
+		}
+		.fr {
+			float: right;
+		}
+		.fg {
+			height: 10px;
+			width: 1em;
+		}
+		.clearer {
+			clear: both;
+		}
+		.clearr {
+			clear: right;
+		}
+		.clearl {
+			clear: left;
+		}
+
+/* ------------------------------ CHAPTER SELECT STYLES ------------------------------ */
+		div.link_chunk {
+			border-style: solid;
+			border-width: 0.2em;
+			border-color: $bold_red;
+
+			a.chsel {
+				display: block;
+				position: relative;
+
+				div.imgholder {
+					display: block;
+					z-index: 2;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					padding: -0.1em 0em -0.1em 0em;
+					opacity: 1;
+					background-color: $light_brown;
+					@include transition(opacity, 0.4s);
+				}
+				p {
+					z-index: 3;
+					position: relative;
+					margin: 0;
+					padding: 0.5em;
+					color: $bold_red;
+					font-size: 150%;
+					font-family: $title_font;
+					font-weight: bold;
+					background-image: linear-gradient(to right, $light_brown, $light_brown, transparent);
+					@include transition(color, 0.4s);
+					@include transition(background-color, 0.4s);
+					@include transition(background-image, 0.4s);
+				}
+			}
+			a.chsel:hover {
+
+				p {
+					color: white;
+					font-weight: normal;
+					background-color: $quite_darker;
+					background-image: none;
+				}
+
+				div.imgholder {
+					opacity: 1;
+				}
+			}
+		}
+	} /*END MAIN*/
+}
+
+span.select2-dropdown {
+	outline: none;
+	border: none;
+	border-bottom: 0.2em solid $light_grey;
+
+	li.select2-results__option--highlighted {
+		background-color: $bold_red !important;
+	}
+}

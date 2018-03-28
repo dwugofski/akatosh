@@ -1,0 +1,17 @@
+#content #header {
+  display: none; }
+#content #main #spellsearchbox {
+  display: none; }
+#content #main #spellbox {
+  columns: 2; }
+  #content #main #spellbox div.spellblock {
+    font-size: 80%;
+    width: 30em; }
+    #content #main #spellbox div.spellblock div.middle {
+      background-color: transparent;
+      border-radius: 0;
+      box-shadow: none; }
+    #content #main #spellbox div.spellblock hr.ender {
+      display: none; }
+
+/*# sourceMappingURL=spells.css.map */

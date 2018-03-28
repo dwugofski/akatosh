@@ -1,0 +1,32 @@
+
+body #content[min-width~="1080px"] #sidebar {
+	display: none;
+}
+
+body #content {
+	background-color: $light_brown;
+	padding: 5px;
+
+/* ------------------------------ SIDEBAR STYLES ------------------------------ */
+	#sidebar {
+		float: right;
+		width: 250px;
+		min-height: 450px;
+		margin: 5px;
+		display: none;
+		background-image: url("../../res/com/akatosh_up.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: calc(100% - 20px) 120px;
+	}
+}
+
+span.select2-dropdown {
+	outline: none;
+	border: none;
+	border-bottom: 0.2em solid $light_grey;
+
+	li.select2-results__option--highlighted {
+		background-color: $bold_red !important;
+	}
+}

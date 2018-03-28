@@ -1,0 +1,274 @@
+
+@import 'colors';
+@import 'fonts';
+
+#content #main #spellbox {
+	padding: 0;
+	line-height: 1em;
+	z-index: 2;
+	width: 46em;
+	margin: 0 auto;
+	min-height: 50pt;
+	display: block;
+	text-align: left;
+
+	* {
+		line-height: 1em;
+	}
+
+	#spell_viewer {
+		display: none;
+		position: fixed;
+		top: 10%;
+		left: 50%;
+		margin-left: -23em;
+		width: 46em;
+		max-height: 80%;
+		overflow-y: auto;
+		overflow-x: visible;
+		z-index: 6;
+
+		div.spellblock {
+			margin-bottom: 0em;
+		}
+	}
+
+	#spell_mask {
+		display: none;
+		position: fixed;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		z-index: 4;
+		background-color: rgba(0,0,0,0.4);
+	}
+
+	div.spellgroup {
+		padding: 1em;
+		position: relative;
+
+		a.anchor {
+			display: block;
+			position: absolute;
+			top: -6em;
+		}
+
+		h3 {
+			font-size: 110%;
+			text-decoration: none;
+			margin-top: 0;
+			border-bottom: 0.1em solid $dull_beige;
+		}
+
+		ul {
+			columns: 3;
+			margin-top: 0;
+			position: relative;
+
+			li {
+				line-height: 1.2em;
+				display: block;
+				color: $medium_grey;
+
+				a {
+					color: $bold_red;
+					text-decoration: none;
+					cursor: pointer;
+				}
+				a:hover {
+					text-decoration: underline;
+				}
+			}
+
+			a.anchor {
+				display: block;
+				position: absolute;
+				top: -6em;
+			}
+		}
+	}
+
+	div.spellblock {
+		-webkit-column-break-inside: avoid;
+		margin-bottom: 1.5em;
+
+/* ------------------------------ STRUCTURE STYLES ------------------------------ */
+		div.bar {
+		    display: none;
+		}
+
+		hr.ender {
+			display: block;
+			margin-bottom: 0.5em;
+			margin-top: 2em;
+			border: 0.15em solid $bold_red;
+			height: 0;
+			background-image: none;
+		}
+
+		div.middle{
+			position: relative;
+			padding: 1em;
+			background-color: #FDF1DC;
+			font-family: $sans_font;
+			color: $bold_red;
+			box-shadow: 0 0 2em $dull_beige;
+			overflow: hidden;
+
+
+/* ------------------------------ HEADING STYLES ------------------------------ */
+			h1 {
+				font-family: $title_font;
+				color: inherit;
+				border-bottom: 0.15em solid $bold_red;
+				font-weight: 700;
+				font-size: 200%;
+				margin-bottom: 0.25em;
+				font-variant: small-caps;
+				letter-spacing: 0.07em;
+				text-decoration: none;
+				text-align: left;
+				width: auto;
+			}
+
+			h2 {
+				font-family: $sans_font;
+				display: block;
+				font-weight: normal;
+			    font-style: italic;
+			    font-size: 90%;
+			    margin: 0;
+				line-height: 1;
+				text-decoration: none;
+				text-align: left;
+				border: none;
+				width: auto;
+			}
+
+			h3 {
+				border-bottom: 0.08em solid $bold_red;
+				color: inherit;
+			    font-size: 150%;
+			    font-variant: small-caps;
+			    font-weight: normal;
+			    letter-spacing: 0.13em;
+			    margin: 0;
+			    margin-bottom: 0.3em;
+			    break-inside: avoid-column;
+			    break-after: avoid-column;
+				line-height: 1.1em;
+				text-decoration: none;
+				width: auto;
+			}
+
+			h4 {
+				color: inherit;
+				font-weight: bold;
+				line-height: 1.4em;
+				text-indent: -1em;
+				display: inline;
+				margin-right: 0.6em;
+				font-size: 1em;
+			}
+
+/* ------------------------------ BLOCK STYLES ------------------------------ */
+			div.spellidname{
+				display: none;
+			}
+
+			div.lvl {
+				display: none;
+			}
+
+			svg {
+				display: none;
+			}
+
+			div.propsec {
+				margin-top: 1.5em;
+
+				prop, div.prop {
+					display: block;
+					text-indent: 1em;
+					line-height: 0.9em;
+					color: black;
+					width: auto;
+
+					p {
+						display: block;	
+						margin-top: 0;
+						margin-bottom: 0.5em;
+						text-indent: 0.5em;
+						fonst-size: 100%;
+						line-height: 1.2em;
+					}
+
+					h4 + p {
+						display: inline;
+					}
+
+/* ------------------------------ LIST STYLES ------------------------------ */
+					ul {
+						list-style-type: none;
+						font-style: italic;
+						color: black;
+						margin-top: 0.5em;
+						margin-bottom: 0.5em;
+						text-indent: -1.5em;
+
+						li {
+							line-height: 1.2em;
+						}
+						li:before {
+							content:"\2022   ";
+						}
+					}
+					ul.dashed {
+						font-style: normal;
+
+						li:before {
+							content: '\2014   ';
+						}
+					}
+
+					table {
+						border-style: none;
+						border-collapse: collapse;
+						text-indent: 0px;
+						margin: 0;
+						display: table;
+						margin-top: 0.5em;
+						margin-bottom: 0.5em;
+						width: 36em;
+						margin-left: 4em; 
+
+						tr {
+							td, th {
+							padding-left: 3.5px;
+							padding-right: 3.5px;
+							margin: 0px;
+							line-height: 1.3em;
+							text-align: left;
+							}
+
+							.center_al {
+								text-align: center;
+								white-space: nowrap;
+							}
+						}
+						tr:nth-child(even) {
+							background-color: $faded_red;
+						}
+					}
+				}
+			}
+			div.propsec.noind {
+
+				prop {
+					text-indent: 0;
+				}
+			}
+		}/*END MIDDLE*/
+	}
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D&amp;D Spell Insert</title>
+	<script type="text/javascript" src="../../com/js/mustache.js"></script>
+	<script type="text/javascript" src="../../com/js/jquery.js"></script>
+	<script type="text/javascript" src="../../com/js/jquery.form.js"></script>
+	<script type="text/javascript" src="loadspells.js"></script>
+	<script type="text/javascript">
+	
+		var spell_list = load_spells("", "list/");
+		
+		$.ajax({url: "cleardb.php", async: false, timeout: 30000, success: function(result){
+			console.log(result);
+		}});
+		
+		window.onload = function(){
+		
+			var spell_template = document.getElementById('spell_template').innerHTML;
+		
+			Mustache.parse(spell_template);
+			
+			//var creatures = spiderdaedra(creature_template);
+			
+			var spells = "";
+			spell_list.forEach(function(item, index) {
+				var item = ""+item;
+				console.log("Running "+item+"\n");
+				var spell = window[item](spell_template);
+				document.getElementById('spells').innerHTML = spell;
+				runit();
+				console.log("Just ran " + item);
+				//creatures += creature;
+			});
+			
+			$.ajax({url: "enhanceability.php", success: function(result){
+				console.log(result);
+			}});
+			
+			//document.getElementById('creatures').innerHTML = creatures;
+			//runit();
+			
+			
+		};
+		
+		function runit(){
+			var propns = $('#properties .name');
+			var propts = $('#properties .text');
+			$('#propnum').attr('value', propns.length);
+			$.each(propns, function(index, value) {
+				var id_name = "propns_" + index;
+				var id_text = "propts_" + index;
+				$(propns[index]).attr("name", id_name);
+				$(propts[index]).attr("name", id_text);
+			});
+			
+			var descriptions = $('#descriptions').children('div');
+			$('#descnum').attr('value', descriptions.length);
+			$.each(descriptions, function(index, desc) {
+				var proptype_name = "desc_proptype_"+index;
+				var proptype_node = $(desc).find('.proptype')[0];
+				var proptype = $(desc).attr('class');
+				$(proptype_node).attr('name', proptype_name);
+				$(proptype_node).attr('value', proptype);
+				switch(proptype) {
+					case 'par':
+						var par = $(desc).find('.paragraph')[0];
+						var par_name = "desc_par_"+index;
+						$(par).attr('name', par_name);
+						break;
+					case 'lst':
+						if ($(desc).attr('dashed') !== typeof undefined) $(proptype_node).attr('value', 'lst_dashed');
+						var listitems = $(desc).find('.list');
+						var lstnum = $(desc).find('.listnum')[0];
+						var lstnum_name = "desc_lst_lstnum_"+index;
+						$(lstnum).attr('name', lstnum_name);
+						$(lstnum).attr('value', listitems.length);
+						$.each(listitems, function(item_index, item){
+							var item_name = "desc_lst_"+index+"_"+item_index;
+							$(item).attr('name', item_name);
+						});
+						break;
+					case 'tab':
+						var rows = $(desc).find('.row');
+						var itemnum = 0;
+						$.each(rows, function(rownum, row){
+							var items = $(row).find('.table');
+							var headed = ($(row).attr('heading') == 'true');
+							$.each(items, function(item_num, item){
+								var heading = $(row).find('.heading')[item_num];
+								var centered = ($(heading).attr('centered') == 'true');
+								var heading_name = "desc_tab_"+index+"_head_"+itemnum;
+								var heading_val = rownum+(headed ? "_1" : "_0")+(centered ? "_1" : "_0");
+								var item_name = "desc_tab_"+index+"_"+itemnum;
+								$(heading).attr('name', heading_name);
+								$(heading).attr('value', heading_val);
+								$(item).attr('name', item_name);
+								itemnum += 1;
+							});
+						});
+						var tabnum = $(desc).find('.tabnum')[0];
+						$(tabnum).attr('value', itemnum);
+						$(tabnum).attr('name', 'desc_tab_tabnum_'+index);
+						break;
+					default:
+						console.log("Could not find case for class "+proptype);
+				}
+			});
+			
+			var descriptions = $('#highers').children('div');
+			$('#highnum').attr('value', descriptions.length);
+			$.each(descriptions, function(index, desc) {
+				var proptype_name = "high_proptype_"+index;
+				var proptype_node = $(desc).find('.proptype')[0];
+				var proptype = $(desc).attr('class');
+				$(proptype_node).attr('name', proptype_name);
+				$(proptype_node).attr('value', proptype);
+				switch(proptype) {
+					case 'par':
+						var par = $(desc).find('.paragraph')[0];
+						var par_name = "high_par_"+index;
+						$(par).attr('name', par_name);
+						break;
+					case 'lst':
+						if ($(desc).attr('dashed') !== typeof undefined) $(proptype_node).attr('value', 'lst_dashed');
+						var listitems = $(desc).find('.list');
+						var lstnum = $(desc).find('.listnum')[0];
+						var lstnum_name = "high_lst_lstnum_"+index;
+						$(lstnum).attr('name', lstnum_name);
+						$(lstnum).attr('value', listitems.length);
+						$.each(listitems, function(item_index, item){
+							var item_name = "high_lst_"+index+"_"+item_index;
+							$(item).attr('name', item_name);
+						});
+						break;
+					case 'tab':
+						var rows = $(desc).find('.row');
+						var itemnum = 0;
+						$.each(rows, function(rownum, row){
+							var items = $(row).find('.table');
+							var headed = ($(row).attr('heading') == 'true');
+							$.each(items, function(item_num, item){
+								var heading = $(row).find('.heading')[item_num];
+								var centered = ($(heading).attr('centered') == 'true');
+								var heading_name = "high_tab_"+index+"_head_"+itemnum;
+								var heading_val = rownum+(headed ? "_1" : "_0")+(centered ? "_1" : "_0");
+								var item_name = "high_tab_"+index+"_"+itemnum;
+								$(heading).attr('name', heading_name);
+								$(heading).attr('value', heading_val);
+								$(item).attr('name', item_name);
+								itemnum += 1;
+							});
+						});
+						var tabnum = $(desc).find('.tabnum')[0];
+						$(tabnum).attr('value', itemnum);
+						$(tabnum).attr('name', 'high_tab_tabnum_'+index);
+						break;
+					default:
+						console.log("Could not find case for class "+proptype);
+				}
+			});
+			
+			$('#spelltemplate').ajaxSubmit(function(data, status){console.log("Data:\n" + data + "\nStatus: " + status);});
+			console.log("submitted");
+		}
+	</script>
+</head>
+<body>
+
+<div id="spells"></div>
+
+<script id="spell_template" type="x-tmpl-mustache">
+<form id="spelltemplate" action="spelldb.php" method="post">
+	<div></div>
+	<input type="text" name="name" value="{{{name}}}"/>
+	<input type="text" name="school" value="{{{school}}}"/>
+	<input type="text" name="type" value="{{{subtitle}}}"/>
+	<input type="text" name="level" value="{{{level}}}"/>
+	{{#properties}}
+	<div id="properties">
+		<input type="type" id="propnum" name="propnum"/>
+		{{#props}}
+		<input type="text" class="name" value="{{{name}}}"/>
+		<input type="text" class="text" value="{{{value}}}"/>
+		{{/props}}
+	</div>
+	{{/properties}}
+	{{#description}}
+	<div id="descriptions">
+		<input type="text" id="descnum" name="descnum"/>
+		{{#props}}
+		<div class="{{#p}}par{{/p}}{{#list}}lst{{/list}}{{#table}}tab{{/table}}" {{#list}}{{#dashed}}dashed="true"{{/dashed}}{{/list}}>
+		<input class="proptype" type="text"/>
+		{{#p}}<input type="text" class="paragraph" value="{{text}}"/>{{/p}}
+		{{#list}}<input type="text" class="listnum"/>{{#items}}<input type="text" class="list" value="{{text}}"/>{{/items}}{{/list}}
+		{{#table}}
+			<input type="text" class="tabnum"/>
+			{{#rows}}
+			<div class="row" {{#heading}}heading="true"{{/heading}}>
+				{{#items}}
+				<input type="text" class="heading" {{#center}}centered="true"{{/center}}/>
+				<input type="text" class="table" value="{{text}}"/>
+				{{/items}}
+			</div>
+			{{/rows}}
+		{{/table}}
+		</div>
+		{{/props}}
+	</div>
+	{{/description}}
+	{{#higher}}
+	<div id="highers">
+		<input type="text" id="highnum" name="highnum"/>
+		{{#props}}
+		<div class="{{#p}}par{{/p}}{{#list}}lst{{/list}}{{#table}}tab{{/table}}" {{#list}}{{#dashed}}dashed="true"{{/dashed}}{{/list}}>
+		<input class="proptype" type="text"/>
+		{{#p}}<input type="text" class="paragraph" value="{{text}}"/>{{/p}}
+		{{#list}}{{#items}}<input type="text" class="list" value="{{text}}"/>{{/items}}{{/list}}
+		{{#table}}
+			<input type="text" class="tabnum"/>
+			{{#rows}}
+			<div class="row" {{#heading}}heading="true"{{/heading}}>
+				{{#items}}
+				<input type="text" class="heading" {{#center}}centered="true"{{/center}}/>
+				<input type="text" class="table" value="{{text}}"/>
+				{{/items}}
+			</div>
+			{{/rows}}
+		{{/table}}
+		</div>
+		{{/props}}
+	</div>
+	{{/higher}}
+</form>
+</script>
+
+</body>

@@ -1,0 +1,218 @@
+#content #main #characterbox div.character .charblock {
+  width: 48em;
+  margin: 0 auto;
+  /* ------------------------------ HEADING STYLES ------------------------------ */
+  /* ------------------------------ STRUCTURE STYLES ------------------------------ */
+  /*END MIDDLE*/ }
+  #content #main #characterbox div.character .charblock h1 {
+    font-family: "Metamorphous", serif;
+    color: inherit;
+    border-bottom: 0.15em solid #7a200d;
+    font-weight: 700;
+    font-size: 200%;
+    margin-bottom: 0.25em;
+    font-variant: small-caps;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    text-align: left;
+    width: auto; }
+  #content #main #characterbox div.character .charblock h2 {
+    font-family: "Noto Sans", "Calibri", sans-serif;
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 90%;
+    margin: 0;
+    line-height: 1;
+    text-decoration: none;
+    text-align: left;
+    border: none;
+    width: auto;
+    margin-bottom: 1em; }
+  #content #main #characterbox div.character .charblock h3 {
+    border-bottom: 0.08em solid #7a200d;
+    color: inherit;
+    font-size: 150%;
+    font-variant: small-caps;
+    font-weight: normal;
+    letter-spacing: 0.13em;
+    margin: 0;
+    margin-bottom: 0.3em;
+    break-inside: avoid-column;
+    break-after: avoid-column;
+    line-height: 1.1em;
+    text-decoration: none;
+    width: auto; }
+  #content #main #characterbox div.character .charblock h4 {
+    color: inherit;
+    font-weight: bold;
+    line-height: 1.2em;
+    text-indent: -1em;
+    display: inline;
+    margin-right: 0.6em;
+    font-size: 1em; }
+  #content #main #characterbox div.character .charblock h5 {
+    color: inherit;
+    font-weight: bold;
+    line-height: 1.2em;
+    text-indent: -1em;
+    display: inline;
+    margin-right: 0.6em;
+    font-size: 1.2em; }
+  #content #main #characterbox div.character .charblock div.bar {
+    display: none; }
+  #content #main #characterbox div.character .charblock div.lvl {
+    display: none; }
+  #content #main #characterbox div.character .charblock hr.ender {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    border: 0.15em solid #7a200d;
+    height: 0;
+    background: none; }
+  #content #main #characterbox div.character .charblock div.middle {
+    padding: 2em;
+    background-color: #fdf1dc;
+    font-family: "Noto Sans", "Calibri", sans-serif;
+    color: #7a200d;
+    border-radius: 0.2em;
+    box-shadow: 0 0 2em #c6bba4;
+    overflow: hidden;
+    font-size: 90%;
+    /* ------------------------------ PROP STYLES ------------------------------ */
+    /* ------------------------------ ABILITIES STYLES ------------------------------ */
+    /* ------------------------------ SKILLS STYLES ------------------------------ */
+    /* ------------------------------ ATTACKS STYLES ------------------------------ */
+    /* ------------------------------ SPELLIST STYLES ------------------------------ */ }
+    #content #main #characterbox div.character .charblock div.middle div.propset {
+      margin-top: 1.5em; }
+      #content #main #characterbox div.character .charblock div.middle div.propset p {
+        color: black;
+        text-indent: 1em; }
+      #content #main #characterbox div.character .charblock div.middle div.propset p:nth-child(2) {
+        text-indent: 0; }
+    #content #main #characterbox div.character .charblock div.middle div.top_props {
+      margin-top: 0; }
+    #content #main #characterbox div.character .charblock div.middle div.prop {
+      display: block;
+      padding-left: 1em;
+      text-indent: -1em;
+      line-height: 0.9em;
+      color: black;
+      width: auto;
+      margin-bottom: 0.4em; }
+      #content #main #characterbox div.character .charblock div.middle div.prop p {
+        display: inline;
+        text-indent: 0.5em;
+        line-height: 1.2em; }
+    #content #main #characterbox div.character .charblock div.middle div.prop.palone {
+      text-indent: 1em;
+      margin-top: -0.4em; }
+    #content #main #characterbox div.character .charblock div.middle div.abilities {
+      border: 0.15em solid #7a200d;
+      padding: 0.5em;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: auto; }
+      #content #main #characterbox div.character .charblock div.middle div.abilities table {
+        width: 100%;
+        border: 0;
+        border-collapse: collapse;
+        margin-left: 0 auto; }
+        #content #main #characterbox div.character .charblock div.middle div.abilities table th, #content #main #characterbox div.character .charblock div.middle div.abilities table td {
+          width: 35px;
+          text-align: center;
+          line-height: 1.4em;
+          font-size: 111%;
+          border-left: 0.1em solid #7a200d; }
+        #content #main #characterbox div.character .charblock div.middle div.abilities table th.col1, #content #main #characterbox div.character .charblock div.middle div.abilities table td.col1 {
+          border-left: 0; }
+    #content #main #characterbox div.character .charblock div.middle div.skills {
+      width: 40em;
+      margin: 0 auto;
+      padding-top: 1.5em; }
+      #content #main #characterbox div.character .charblock div.middle div.skills table {
+        border: 0;
+        border-collapse: collapse;
+        border-left: 0.1em solid #7a200d; }
+        #content #main #characterbox div.character .charblock div.middle div.skills table th, #content #main #characterbox div.character .charblock div.middle div.skills table td {
+          color: #7a200d;
+          text-align: left;
+          line-height: 1.4em;
+          text-indent: 0;
+          white-space: nowrap;
+          font-size: 0.9em;
+          padding: 0px;
+          padding-left: 1em;
+          padding-right: 0.5em; }
+        #content #main #characterbox div.character .charblock div.middle div.skills table th.val, #content #main #characterbox div.character .charblock div.middle div.skills table td.val {
+          text-align: right;
+          text-indent: none;
+          padding: 0px;
+          padding-right: 1em;
+          border-right: 0.1em solid #7a200d; }
+    #content #main #characterbox div.character .charblock div.middle div.atks div.prop {
+      padding-left: 0;
+      text-indent: 0; }
+    #content #main #characterbox div.character .charblock div.middle div.spellist {
+      columns: 3; }
+      #content #main #characterbox div.character .charblock div.middle div.spellist div.prop {
+        padding-top: 0.5em;
+        page-break-inside: avoid;
+        -webkit-column-break-inside: avoid; }
+        #content #main #characterbox div.character .charblock div.middle div.spellist div.prop table {
+          border-style: none;
+          border-collapse: collapse;
+          text-indent: 0px;
+          display: inline-block;
+          width: 100%; }
+          #content #main #characterbox div.character .charblock div.middle div.spellist div.prop table th, #content #main #characterbox div.character .charblock div.middle div.spellist div.prop table td {
+            padding-left: 0px;
+            padding-right: 3.5px;
+            margin: 0px;
+            line-height: 1.3em;
+            text-align: left;
+            font-size: 120%; }
+        #content #main #characterbox div.character .charblock div.middle div.spellist div.prop ul {
+          padding: 0px;
+          margin: 0px;
+          list-style-position: inside;
+          list-style-type: circle;
+          font-style: italic;
+          text-indent: 0px;
+          list-style-type: none; }
+          #content #main #characterbox div.character .charblock div.middle div.spellist div.prop ul li {
+            line-height: 1.2em; }
+          #content #main #characterbox div.character .charblock div.middle div.spellist div.prop ul li:before {
+            font-style: normal;
+            font-size: 150%;
+            content: '\25E6   '; }
+          #content #main #characterbox div.character .charblock div.middle div.spellist div.prop ul li.prepped:before {
+            font-style: normal;
+            font-size: 150%;
+            content: '\2022   '; }
+        #content #main #characterbox div.character .charblock div.middle div.spellist div.prop ul.cantrip li:before {
+          font-size: 100%;
+          content: ''; }
+
+#content #main #characterbox #spellbox {
+  width: 46em;
+  margin: 0 auto;
+  position: relative;
+  padding: 1em;
+  background-color: #fdf1dc;
+  font-family: "Noto Sans", "Calibri", sans-serif;
+  color: #7a200d;
+  border-radius: 0.2em;
+  box-shadow: 0 0 2em #c6bba4;
+  overflow: hidden;
+  columns: 2;
+  margin-top: 3em; }
+  #content #main #characterbox #spellbox h1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.2em solid #7a200d;
+    overflow: hidden;
+    margin-bottom: 0.5em; }
+
+/*# sourceMappingURL=character.css.map */

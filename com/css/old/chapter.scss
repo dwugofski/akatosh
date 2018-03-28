@@ -1,0 +1,44 @@
+
+@import 'colors';
+@import 'fonts';
+
+section {
+
+/* ------------------------------ MISC SECT STYLES ------------------------------ */
+	.moblink {
+		display: none;
+	}
+
+	#creaturebox {
+		margin-top: 3em;
+	}
+
+	chapter, div.chapter {
+
+/* ------------------------------ CUSTOM BLOCK STYLES ------------------------------ */
+
+		item, span.item {
+			font-style: italic;
+		}
+
+		die, b.die {
+			display: inline;
+			font-weight: bold;
+		}
+
+		enc, span.enc {
+			font-variant: small-caps;
+			font-weight: bold;
+			font-size: 111%;
+			color: $bold_red;
+		}
+
+		loot, span.loot {
+			font-variant: small-caps;
+			font-weight: bold;
+			font-size: 111%;
+			color: $bold_green; 
+		}
+
+	} /* END CHAPTER */
+}

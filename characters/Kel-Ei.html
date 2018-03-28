@@ -1,0 +1,909 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kel-Ei</title>
+		<link rel="icon" href="../res/com/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/fonts.css"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/body.css"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/viewer.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/content.css"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/print/content.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/dice.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/print/dice.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/heading.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/print/heading.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/navbar.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/print/navbar.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/sidenav.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/print/sidenav.css" media="print"/>
+	<script type="text/javascript" src="../com/js/def/jquery.js"></script>
+	<script type="text/javascript" src="../com/js/def/mustache.js"></script>
+	<script type="text/javascript" src="../com/js/def/viewer.js"></script>
+	<script type="text/javascript" src="../com/js/def/resize_sensor.js"></script>
+	<script type="text/javascript" src="../com/js/def/element_queries.js"></script>
+	<script type="text/javascript" src="../com/js/def/def_head_rendering.js"></script>
+	<script type="text/javascript" src="../com/js/def/def_sidenav_render.js"></script>
+	<script type="text/javascript" src="../com/js/def/def_fill_sidenav.js"></script>	<link rel="stylesheet" type="text/css" href="../com/css/character.css"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/print/character.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/spells.css"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/print/spells.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="../com/css/smallspells.css"/>
+	<link rel="stylesheet" type="text/css" href="index_style.css"/>
+</head>
+<body>
+
+
+<div id="media_ident"></div>
+<div id="heading">
+	<a href="../"><span class="special">Splinters of</span> Akatosh</a>
+</div>
+<div id="navbar">
+	<nav class="links">
+		<span id="homelink" class="link home"><!-- <a href="../"></a>--></span>
+		<span tabindex="-1" class="link" id="over_link">
+			<a href="../">OVERVIEW</a>
+			<div class="tooltip">
+				<a href="../over/index.php?section=mech">Gameplay Mechanics</a>
+				<a href="../over/index.php?section=race">Races of Tamriel</a>
+				<a href="../over/index.php?section=mag">Magical Items</a>
+				<a href="../over/index.php?section=dmd">DM Decisions</a>
+			</div>
+		</span>		<span tabindex="-1" class="link" id="chap_link">
+			<a href="../chapters/">CHAPTERS</a>
+			<div class="tooltip">
+				<a href="../chapters/01_bruma/">Bruma and Piukanda</a>
+				<a href="../chapters/02_skyrim/">Retrieving the Bal Falruhn</a>
+			</div>
+		</span>		<span class="link">
+			<a href="../spells">SPELLS</a>
+		</span>		<span class="link">
+			<a href="../creatures">CREATURES</a>
+		</span>		<span tabindex="-1" class="link active" id="char_link">
+			<a href="../characters/">CHARACTERS</a>
+			<div class="tooltip">
+				<a href="../characters/index.php?char=kelei">Kel-Ei</a>
+				<a href="../characters/index.php?char=miraandarys">Mira Andarys</a>
+				<a href="../characters/index.php?char=neradrystelvanni">Neradrys</a>
+				<a href="../characters/index.php?char=qazahtadar">Qa&rsquo;Zahta-Dar</a>
+				<a href="../characters/index.php?char=zala">Zala</a>
+			</div>
+		</span>	</nav>
+</div><div id="sidenav">
+	<nav class="container">
+	</nav>
+</div>
+<div id="content">
+	<div id="sidebar">
+	</div>
+	<div id="main">		<div id="header">
+			<div class="sub" style="top: 110px; left: 50px;">Characters</div>
+			<div class="main" style="top: 140px; left: 50px;">Meet the Party</div>
+		</div>
+		<section id="characterbox">
+			<div class="character" id="kelei">
+				<div class="charblock multi">
+					<div class="bar"></div>
+					<div class="middle colored">
+						<div class="lvl">3</div>
+						<div class="title">
+							<h1>Kel-Ei</h1>
+							<h2>Argonian Wizard (4), Neutral</h2>
+						</div>
+						<div class="propset top_props">
+							<div class="prop"><h4>Armor Class</h4><p>12 (unarmored)</p></div>
+							
+							<div class="prop"><h4>Hit Points</h4><p>22 (3d6 + 10)</p></div>
+							
+							<div class="prop"><h4>Speed</h4><p>30ft</p></div>
+							
+						</div>
+						<div class="propset abilities">
+							<table>
+								<tr>
+									<th class="col1">STR</th>
+									<th>DEX</th>
+									<th>CON</th>
+									<th>INT</th>
+									<th>WIS</th>
+									<th>CHA</th>
+								</tr>
+								<tr>
+									<td class="col1">10 (0)</td>
+									<td>14 (+2)</td>
+									<td>12 (+1)</td>
+									<td>18 (+4)</td>
+									<td>10 (0)</td>
+									<td>10 (0)</td>
+								</tr>
+							</table>
+						</div>
+						<div class="propset bot_props">
+							<div class="prop"><h4>Saving Throw Proficiencies</h4><p>Intelligence, Wisdom</p></div>
+							
+							<div class="prop"><h4>Skill Proficiencies</h4><p>Arcana, History, Insight, and Investigation</p></div>
+							
+							<div class="prop"><h4>Equipment Proficiencies</h4><p>Darts, quarterstaff, light crossbow, daggers, bows, bladed weapons</p></div>
+							
+							<div class="prop"><h4>Languages</h4><p>Cyrodiilic, Jel, Ayleidoon, Atmoran</p></div>
+							
+						</div>
+						<div class="propset skills">
+							<div class="prop">
+								<table>
+									<tr>
+										<th>Acrobatics (DEX)</th>
+										<td class="val">+2</td>
+										<th>Animal Handling (WIS)</th>
+										<td class="val">0</td>
+										<th>Arcana (INT)</th>
+										<td class="val">+6</td>
+									</tr>
+									<tr>
+										<th>Athletics (STR)</th>
+										<td class="val">+2</td>
+										<th>Deception (CHA)</th>
+										<td class="val">0</td>
+										<th>History (INT)</th>
+										<td class="val">+6</td>
+									</tr>
+									<tr>
+										<th>Insight (WIS)</th>
+										<td class="val">+2</td>
+										<th>Intimidation (CHA)</th>
+										<td class="val">0</td>
+										<th>Investigation (INT)</th>
+										<td class="val">+6</td>
+									</tr>
+									<tr>
+										<th>Medicine (WIS)</th>
+										<td class="val">+1</td>
+										<th>Nature (INT)</th>
+										<td class="val">+5</td>
+										<th>Perception (WIS)</th>
+										<td class="val">0</td>
+									</tr>
+									<tr>
+										<th>Performance (CHA)</th>
+										<td class="val">0</td>
+										<th>Persuasion (CHA)</th>
+										<td class="val">0</td>
+										<th>Religion (INT)</th>
+										<td class="val">+4</td>
+									</tr>
+									<tr>
+										<th>Sleight of Hand (DEX)</th>
+										<td class="val">+2</td>
+										<th>Stealth (DEX)</th>
+										<td class="val">+2</td>
+										<th>Survival (WIS)</th>
+										<td class="val">0</td>
+									</tr>
+								</table>
+							</div class="prop">
+						</div>
+						<div class="feats">
+							<div class="propset">
+								<h5 class="colored">Racial Features: Argonian</h5>
+								<div class="prop"><h4>Resist Common Disease.</h4><p>Altmer have a +3 bonus to saving throws against diseases</p></div>
+								
+								<div class="prop"><h4>Scaled Skin.</h4><p>Tough Argonian hide provides a +1 bonus to AC regardless of equipment</p></div>
+								
+								<div class="prop"><h4>Water Breathing.</h4><p>Argonians can breathe underwater</p></div>
+								
+								<div class="prop"><h4>Resist Poison.</h4><p>Argonians are immune to the effects of poisons</p></div>
+								
+								<div class="prop"><h4>Swamp Swimmers.</h4><p>Argonians gain a +10 bonus to speed when moving through water and do not suffer movement penalties moving through swampy terrain</p></div>
+								
+								<div class="prop"><h4>Beast Claws.</h4><p>Argonians can deal a 1d6 (slashing) damage unarmed</p></div>
+								
+							</div>
+							<div class="propset">
+								<h5 class="colored">Background Features: Sage </h5>
+								<div class="prop"><h4>Researcher.</h4><p>You know where to find most recorded information.</p></div>
+								
+							</div>
+							<div class="propset">
+								<h5 class="colored">Class Features: Wizard</h5>
+								<div class="prop"><h4>Arcane Recovery.</h4><p>Once per day you can take a short rest and recover a number of spell slots up to half my wizard level.</p></div>
+								
+								<div class="prop"><h4>Evocation Savant.</h4><p>The gold and time you must spend to copy an evocation spell into your spellbook is halved.</p></div>
+								
+								<div class="prop"><h4>Sculpt Spells.</h4><p>You can create pockets of relative safety within the effects of your evocation spells. When you case an evocation spell that affects other creatures, you can choose up to 1 + the spell&rsquo;s level to automatically succeed saving throws against the spells and take no damage if the damage would be halved for a successful throw.</p></div>
+								
+							</div>
+							<div class="propset">
+								<h5 class="colored">Bonus Features</h5>
+								<div class="prop"><h4>Elemental Adept.</h4><p>Spells which deal fire damage ignore resistances. As well, if the result of a damage dice roll for a fire damage spell is a 1, treat it as a 2.</p></div>
+								
+							</div>
+						</div>
+						<div class="propset atks">
+							<h3>Attacks</h3>
+							<div class="prop"><h4>Dagger.</h4><p><i>Melee Weapon Attack:</i> reach 5 ft, <i>Finesse</i>, one target. Hit: 1d4 piercing damage.</p></div>
+							<div class="prop"><h4>Darts.</h4><p><i>Simple Ranged Weapon Attack:</i> thrown 20/60, <i>Finesse</i>, one target. Hit: 1d4 piercing damage.</p></div>
+							<div class="prop"><h4>Claws.</h4><p><i>Melee Weapon Attack:</i> reach 5ft, <i>Finesse</i>, one target +4 to hit. Hit: 1d6 slashing damage.</p></div>
+						</div>
+						<div class="propset">
+							<h3>Spells</h3>
+							<div class="prop"><h4>Spell save DC.</h4><p>14</p></div>
+							<div class="prop"><h4>Spell attack modifier.</h4><p>+6</p></div>
+							<div class="spellist">
+								<div class="prop">
+									<table class="colored">
+										<tr>
+											<th>Cantrips</th>
+										</tr>
+									</table>
+									<ul class="cantrip">
+										<li class="spelllink" id="bladeward_link"><a href="#bladeward_anc">Blade Ward</a></li>
+										<li class="spelllink" id="acidsplash_link"><a href="#acidsplash_anc">Acid Splash</a></li>
+										<li class="spelllink" id="magehand_link"><a href="#magehand_anc">Mage Hand</a></li>
+										<li class="spelllink" id="shockinggrasp_link"><a href="#shockinggrasp_anc">Shocking Grasp</a></li>
+									</ul>
+								</div>
+								<div class="prop">
+									<table class="colored">
+										<tr>
+											<th>Level 1</th>
+											<td>Slot Total: 4</td>
+										</tr>
+									</table>
+									<ul>
+										
+										<li class="spelllink" id="alarm_link"><a href="#Alarm">
+										Alarm</a>
+										</li>
+										
+										<li class="spelllink" id="burninghands_link"><a href="#Burning Hands">
+										Burning Hands</a>
+										</li>
+										
+										<li class="spelllink" id="chromaticorb_link"><a href="#Chromatic Orb">
+										Chromatic Orb</a>
+										</li>
+										
+										<li class="spelllink" id="grease_link"><a href="#Grease">
+										Grease</a>
+										</li>
+										
+										<li class="spelllink" id="moldearth_link"><a href="#Mold Earth">
+										Mold Earth</a>
+										</li>
+										
+										<li class="spelllink" id="sleep_link"><a href="#Sleep">
+										Sleep</a>
+										</li>
+										
+										<li class="spelllink" id="thunderwave_link"><a href="#Thunderwave">
+										Thunderwave</a>
+										</li>
+										
+										<li class="spelllink" id="viciousmockery_link"><a href="#Vicious Mockery">
+										Vicious Mockery</a>
+										</li>
+									</ul>
+								</div>
+								<div class="prop">
+									<table class="colored">
+										<tr>
+											<th>Level 2</th>
+											<td>Slot Total: 3</td>
+										</tr>
+									</table>
+									<ul>
+										<li class="spelllink prepped" id="levitate_link" ><a href="#Levitate">
+										
+										Levitate</a>
+										</li>
+										<li class="spelllink prepped" id="mistystep_link" ><a href="#Misty Step">
+										
+										Misty Step</a>
+										</li>
+										<li class="spelllink prepped" id="skywrite_link" ><a href="#Skywrite">
+										
+										Skywrite</a>
+										</li>
+										<li class="spelllink prepped" id="spiderclimb_link" ><a href="#Spider Climb">
+										
+										Spider Climb</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="propset background">
+							<h3>Background</h3>
+							<p>Born as a Telvanni slave separated from his Saxhleel heritage, Kel-Ei was first taught magic by his master, Edraldo Telvanni, to help in his duties. During these study sessions, Kel-Ei learned about a Dwemer puzzle box Edraldo kept to study. Intrigued by the box, one day Kel-Ei asked his master about it. Since knowledge of other civilizations and cultures has no practical benefit for a slave, Edraldo told Kel-Ei to forget about the Dwemer and focus on his work.</p>
+							<p>One day, while Kel-Ei working in the fields outside the wizard&rsquo;s tower, he spotted Edraldo, infuriated, charging towards him. Once again Kel-Ei had snuck into the wizard&rsquo;s library to read up on the Dwemer while his master slept, and once again &mdash; despite Edraldo threatening his life last time &mdash; Kel-Ei had mixed up the arrangement of books, and Edraldo knew he had snuck in. Furious at what he felt was an ungrateful slave, Edraldo had murder in his eyes. Fearing for his life, Kel-Ei picked up a nearby rock just in case. When Edraldo readied a fireball to send at him, Kel-Ei hurled the rock at Edraldo, striking him in the head and killing him on the spot. </p>
+							<p>Using Edraldo&rsquo;s keys, Kel-Ei freed himself and two nearby slaves. Instead of fleeing with them, Kel-Ei snuck back into the wizard&rsquo;s tower to retrieve the Dwemer puzzle box and Edraldo&rsquo;s notes. Since then Kel-Ei has been investigating the origins of the box and making his way as a traveling wizard, consulting with experts and doing odd jobs.</p>
+							<p>Kel-Ei still has not learned much about the box &mdash; several other mentions of Dwemer puzzle boxes have yielded intriguing, but ultimately fruitless investigations. From what he has gathered, the first mentioning of this specific box comes from around the time of the Ayleid exodus. Further investigation revealed a story about an Ayleid refugee caravan that was ambushed outside of Labyrinthian which was rumored to carry a powerful artifact. Something about the story stood out to Kel-Ei, so he decided to investigate further. He was captured by Dragon Cultists while trying to enter the ruins a few weeks ago and is now being held as their prisoner.</p>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar"></div>
+				</div>
+			</div>
+			<div id="spellbox">
+				<h1>Spells</h1>
+				<div class="spellblock " id="Blade Ward">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Blade Ward</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">0</div>
+						<div class="title">
+							<h1>Blade Ward</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>Cantrip</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>30 feet</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S</p></prop>
+							
+							<prop><h4>Duration</h4><p>1 round</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Acid Splash">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Acid Splash</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">0</div>
+						<div class="title">
+							<h1>Acid Splash</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>Cantrip</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>60 feet</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S</p></prop>
+							
+							<prop><h4>Duration</h4><p>Instantaneous</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a <b class="die save dex">DEX</b> saving throw or take <b class="die dmg acid">1d6</b> acid damage.</p></prop>
+						</div>
+						<div class="highlv propsec">
+							<h3>At Higher Levels</h3>
+								
+								<prop><p>This spell’s damage increases by <b class="die dmg acid">1d6</b> when you reach 5th level (<b class="die dmg acid">2d6</b>), 11th level (<b class="die dmg acid">3d6</b>), and 17th level (<b class="die dmg acid">4d6</b>).</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Mage Hand">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Mage Hand</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">0</div>
+						<div class="title">
+							<h1>Mage Hand</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>Cantrip</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>30 feet</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S</p></prop>
+							
+							<prop><h4>Duration</h4><p>1 minute</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p></prop>
+								
+								<prop><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p></prop>
+								
+								<prop><p>The hand can’t attack, activate magical items, or carry more than 10 pounds.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Shocking Grasp">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Shocking Grasp</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">0</div>
+						<div class="title">
+							<h1>Shocking Grasp</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>Cantrip</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>Touch</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S</p></prop>
+							
+							<prop><h4>Duration</h4><p>Instantaneous</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p> Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes <span class="die dmg lightning">1d8</span> lightning damage, and it can&rsquo;t take reactions until the start of its next turn.</p></prop>
+						</div>
+						<div class="highlv propsec">
+							<h3>At Higher Levels</h3>
+								
+								<prop><p>This spell&rsquo;s damage increases by <b class=\'die dmg lightning\'>1d8</b> when you reach 5th level (<b class=\'die dmg lightning\'>2d8</b>), 11th level (<b class=\'die dmg lightning\'>3d8</b>), and 17th level (<b class=\'die dmg lightning\'>4d8</b>).</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Alarm">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Alarm</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">1</div>
+						<div class="title">
+							<h1>Alarm</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>1</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 minute</p></prop>
+							
+							<prop><h4>Range</h4><p>30 feet</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S, M (a tiny bell and a piece of fine silver wire)</p></prop>
+							
+							<prop><h4>Duration</h4><p>8 hours</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won&rsquo;t set off the alarm. You also choose whether the alarm is mental or audible.</p></prop>
+								
+								<prop><p>A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping.</p></prop>
+								
+								<prop><p>An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Burning Hands">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Burning Hands</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">1</div>
+						<div class="title">
+							<h1>Burning Hands</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>1</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>Self (15-foot cone)</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S</p></prop>
+							
+							<prop><h4>Duration</h4><p>Instantaneous</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a <b class="die save dex">DEX</b> saving throw. A creature takes <b class="die dmg fire">3d6</b> fire damage on a failed save, or half as much damage on a successful one.</p></prop>
+								
+								<prop><p>The fire ignites any flammable objects in the area that aren&rsquo;t being worn or carried.</p></prop>
+						</div>
+						<div class="highlv propsec">
+							<h3>At Higher Levels</h3>
+								
+								<prop><p>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by <b class="die dmg fire">1d6</b> for each slot level above 1st.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Chromatic Orb">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Chromatic Orb</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">1</div>
+						<div class="title">
+							<h1>Chromatic Orb</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>1</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>90 feet</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S, M (a diamond worth at least 50 gp)</p></prop>
+							
+							<prop><h4>Duration</h4><p>Instantaneous</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>You hurl a 4-inch-diameter sphere of energy at a creature that you can see within range. You choose acid, cold, fire, lightning, poison, or thunder for the type of orb you create, and then make a ranged spell attack against the target. If the attack hits, the creature takes <b class="die dmg force">3d8</b> damage of the type you chose.</p></prop>
+						</div>
+						<div class="highlv propsec">
+							<h3>At Higher Levels</h3>
+								
+								<prop><p>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by <b class="die dmg force">1d8</b> for each slot level above 1st.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Grease">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Grease</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">1</div>
+						<div class="title">
+							<h1>Grease</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>1</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>60 feet</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S, M (a bit of pork rind or butter)</p></prop>
+							
+							<prop><h4>Duration</h4><p>1 minute</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration.</p></prop>
+								
+								<prop><p>When the grease appears, each creature standing in its area must succeed on a <span class="die save dex">DEX</span> saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a <span class="die save dex">DEX</span> saving throw or fall prone.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Mold Earth">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Mold Earth</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">1</div>
+						<div class="title">
+							<h1>Mold Earth</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>1</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>30 feet</p></prop>
+							
+							<prop><h4>Component</h4><p>S</p></prop>
+							
+							<prop><h4>Duration</h4><p>Instantaneous or 1 hour</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:</p></prop>
+								
+								
+								<prop><ul >
+									<li>If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn&rsquo;t have enough force to cause damage.</li><li>You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.</li><li>If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour. If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</li>
+								</ul></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Sleep">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Sleep</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">1</div>
+						<div class="title">
+							<h1>Sleep</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>1</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>90 feet</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S, M (a pinch of fine sand, rose petals, or a cricket)</p></prop>
+							
+							<prop><h4>Duration</h4><p>1 minute</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>This spell sends creatures into a magical slumber. Roll <b class="die">5d8</b>; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).</p></prop>
+								
+								<prop><p>Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature&rsquo;s hit points from the total before moving on to the next creature with the next lowest hit points. A creature&rsquo;s hit points must be equal to or less than the remaining total for that creature to be affected.</p></prop>
+								
+								<prop><p>Undead and creatures immune to being charmed aren&rsquo;t affected by the spell.</p></prop>
+						</div>
+						<div class="highlv propsec">
+							<h3>At Higher Levels</h3>
+								
+								<prop><p>When you cast this spell using a spell slot of 2nd level or higher, roll an additional <b class="die">2d8</b> for each slot level above 1st.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Thunderwave">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Thunderwave</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">1</div>
+						<div class="title">
+							<h1>Thunderwave</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>1</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>Self (15-foot cone)</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S</p></prop>
+							
+							<prop><h4>Duration</h4><p>Instantaneous</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a <b class="die save con">CON</b> saving throw. On a failed save, a creature takes <b class="die dmg thun">2d8</b> thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn&rsquo;t pushed.</p></prop>
+								
+								<prop><p>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell&rsquo;s effect, and the spell emits a thunderous boom audible out to 300 feet.</p></prop>
+						</div>
+						<div class="highlv propsec">
+							<h3>At Higher Levels</h3>
+								
+								<prop><p>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by <b class="die dmg thun">1d8</b> for each slot level above 1st.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Vicious Mockery">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Vicious Mockery</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">0</div>
+						<div class="title">
+							<h1>Vicious Mockery</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>Cantrip</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>60 feet</p></prop>
+							
+							<prop><h4>Component</h4><p>V</p></prop>
+							
+							<prop><h4>Duration</h4><p>Instantaneous</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a <b class="die save wis">WIS</b> saving throw or take <b class="die dmg psychic">1d4</b> psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.</p></prop>
+						</div>
+						<div class="highlv propsec">
+							<h3>At Higher Levels</h3>
+								
+								<prop><p>This spell's damage increases by <b class="die dmg psychic">1d4</b> when you reach 5th level (<b class="die dmg psychic">2d4</b>), 11th level (<b class="die dmg psychic">3d4</b>), and 17th level (<b class="die dmg psychic">4d4</b>).</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Levitate">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Levitate</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">2</div>
+						<div class="title">
+							<h1>Levitate</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>2</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>60 feet</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S, M (either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end)</p></prop>
+							
+							<prop><h4>Duration</h4><p>Cencentration, up to 10 minutes</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a <span class="die save con">CON</span> saving throw is unaffected.</p></prop>
+								
+								<prop><p>The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target&rsquo;s altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell&rsquo;s range.</p></prop>
+								
+								<prop><p>When the spell ends, the target floats gently to the ground if it is still aloft.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Misty Step">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Misty Step</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">2</div>
+						<div class="title">
+							<h1>Misty Step</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>2</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 bonus action</p></prop>
+							
+							<prop><h4>Range</h4><p>Self</p></prop>
+							
+							<prop><h4>Component</h4><p>V</p></prop>
+							
+							<prop><h4>Duration</h4><p>Instantaneous</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Skywrite">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Skywrite</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">2</div>
+						<div class="title">
+							<h1>Skywrite</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>2</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>Sight</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S</p></prop>
+							
+							<prop><h4>Duration</h4><p>Concentration, up to 1 day</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell’s duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+				<div class="spellblock " id="Spider Climb">
+					<div class="bar top"></div>
+					<div class="middle">
+						<div class="spellidname">Spider Climb</div>
+						<svg height="60" width="40" class="lvl"><polyline points="0,0 0,40 20,60 40,40 40,0"/></svg>
+						<div class="lvl">2</div>
+						<div class="title">
+							<h1>Spider Climb</h1>
+							<h2></h2>
+						</div>
+						<div class="top_props propsec noind">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+							<prop><h4>Level</h4><p>2</p></prop>
+							
+							<prop><h4>Casting Time</h4><p>1 action</p></prop>
+							
+							<prop><h4>Range</h4><p>Touch</p></prop>
+							
+							<prop><h4>Component</h4><p>V, S, M (a drop of bitumen and a spider)</p></prop>
+							
+							<prop><h4>Duration</h4><p>Concentration, up to 1 hour</p></prop>
+							
+						</div>
+						<div class="desc propsec">
+							<svg class="sectionbar" height="4px" width="100%" viewbox="0 0 255 4" preserveAspectRatio="none"><polyline points="0,0 255,1.75 0,3.5"/></svg>
+								
+								<prop><p>Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.</p></prop>
+						</div>
+						<hr class="ender"/>
+					</div>
+					<div class="bar bottom"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+</body>
+</html>

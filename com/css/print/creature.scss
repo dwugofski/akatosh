@@ -1,0 +1,62 @@
+
+#heading {
+	display: none;
+}
+
+#content {
+	#header {
+		display: none;
+	}
+
+	#main {
+		#creaturesearchbox {
+			display: none;
+		}
+
+		div#creaturebox {
+			columns: 1;
+
+			div.moblock {
+				font-size: 100%;
+				display: inline-block;
+				page-break-after: always;
+
+				div.middle{
+					background-color: transparent;
+					border-radius: 0;
+					box-shadow: none;
+					margin: 0;
+					width: auto;
+
+					div.title {
+						width: auto;
+					}
+
+					div.top_props, div.abilities, div.bot_props, div.feats, div.actions, div.reactions {
+						margin: 0;
+						margin-top: 1.5em;
+						width: auto;
+
+						prop, div.prop {
+							margin: 0 5% 0 5%;
+							width: 90%
+						}
+
+						h3 {
+							margin: 0 5% 0 5%;
+							width: 90%
+						}
+					}
+					div.abilities {
+						width: 80%;
+						margin-left: 10%;
+					}
+				}
+
+				hr.ender {
+					display: none;
+				}
+			}
+		}
+	}
+}

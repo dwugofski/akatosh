@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,aAAc;EACb,gBAAgB,EAAE,IAAI;EACtB,KAAK,ECCK,OAAO;EDAjB,WAAW,EENC,qBAAqB;EFOjC,SAAS,EAAE,IAAI;EACf,YAAY,EAAE,UAAU",
+"sources": ["heading.scss","_colors.scss","_fonts.scss"],
+"names": [],
+"file": "heading.css"
+}

@@ -1,0 +1,25 @@
+#content #main #header {
+  display: block; }
+
+body #content #main section {
+  columns: 2;
+  page-break-after: always; }
+  body #content #main section chapter loc, body #content #main section chapter span.loc {
+    font-style: italic; }
+  body #content #main section chapter quest, body #content #main section chapter span.quest {
+    font-style: italic; }
+  body #content #main section chapter enemy, body #content #main section chapter span.enemy {
+    font-weight: normal; }
+  body #content #main section chapter div.tablewrap table {
+    box-shadow: none;
+    font-size: 75%;
+    max-width: 100%; }
+  body #content #main section chapter div.tablewrap.full {
+    column-span: all;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    page-break-inside: avoid; }
+    body #content #main section chapter div.tablewrap.full table {
+      width: 100%; }
+
+/*# sourceMappingURL=chapter.css.map */

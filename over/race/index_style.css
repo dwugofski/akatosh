@@ -1,0 +1,12 @@
+body #content #header {
+	background-image: url("../../res/backs/battle.jpg");
+	background-position: 50% -550px;
+}
+@media print{
+	body #content #main #racial_details #races {
+		float: none !important;
+	}
+	body #content #main #racial_details #races div {
+		page-break-after: always;
+	}
+}

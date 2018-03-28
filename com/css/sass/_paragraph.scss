@@ -1,0 +1,151 @@
+
+body #content #main section {
+	span.u {
+		text-decoration: underline
+	}
+	span.calc {
+		font-family: $code_font;
+		text-indent: 0;
+		font-weight: bold;
+	}
+	span.npc {
+		display: inline;
+		font-weight: bold;
+		font-style: italic;
+		color: $bold_red; 
+		position: relative;
+	}
+	span.loc {
+		display: inline;
+		font-style: italic;
+		text-decoration: underline;
+		color: $bold_red;
+		position: relative;
+	}
+	span.quest {
+		display: inline;
+		font-weight: bold;
+		font-style: italic;
+		text-decoration: underline;
+	}
+	span.enemy {
+		display: inline;
+		font-weight: bold;
+		letter-spacing: -0.1em;
+		color: $bold_red;
+	}
+	span.item {
+		font-style: italic;
+	}
+	span.enc {
+		font-variant: small-caps;
+		font-weight: bold;
+		font-size: 111%;
+		color: $bold_red;
+	}
+
+	span.loot {
+		font-variant: small-caps;
+		font-weight: bold;
+		font-size: 111%;
+		color: $bold_green; 
+	}
+
+	p {
+		text-indent: 1em;
+		margin-bottom: 0.3em;
+		widows: 2;
+		orphans: 2;
+
+		a {
+			color: $bold_red;
+			text-decoration: underline;
+		}
+
+		span.mono {
+			font-family: $code_font;
+		}
+	}
+	p.uind {
+		text-indent: 0;
+	}
+	p.calc {
+		@extend span.calc;
+		text-align: center;
+	}
+
+	em {
+		color: $bold_red;
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	footnote, p.footnote {
+		font-family: $note_font;
+		font-size: 0.9em;
+		font-weight: bold;
+		display: block;
+	}
+	footnote.remark, p.footnote.remark {
+		margin-top: 0;
+		font-family: $sans_font;
+		font-size: 0.7em;
+		font-weight: normal;
+	}
+
+	quote, p.quote {
+		display: inline-block;
+		border: 0.2em solid $bold_red;
+		color: $bold_red;
+		font-family: $serif_font;
+		font-style: italic;
+		font-weight: bold;
+		page-break-inside: avoid;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		text-indent: 1em;
+		padding: 0.5em;
+	}
+	p.quote.short {
+		display: table;
+		margin: auto;
+		text-indent: 0px;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	note, p.note {
+		display: inline-block;
+		border: 0.2em solid $grey;
+		color: $grey;
+		font-size: 1em;
+		font-style: italic;
+		page-break-inside: avoid;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		padding: 0.5em;
+	}
+	p.note.red {
+		border: 0.2em solid $light_red;
+		color: $light_red;
+	}
+
+	div.racebox {
+		width: 31em;
+	}
+
+	div.loot_holder span {
+		margin-left: 1em;
+	}
+
+	hr {
+		background-image: linear-gradient(to right, $bold_red, transparent);
+		border: none;
+		height: 0.2em;
+	}
+}

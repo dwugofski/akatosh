@@ -1,0 +1,102 @@
+#sidenav::-webkit-scrollbar {
+  display: none; }
+
+#sidenav {
+  display: block;
+  height: auto;
+  position: fixed;
+  top: 110px;
+  left: -20em;
+  overflow-y: auto;
+  font-family: "Noto Sans", "Calibri", sans-serif;
+  z-index: 3;
+  color: #7a200d;
+  direction: rtl;
+  padding-right: 2em;
+  width: 20em;
+  -moz-transition: left 0.4s;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s; }
+  #sidenav nav.container {
+    display: block;
+    direction: ltr;
+    padding-bottom: 10em; }
+    #sidenav nav.container div a {
+      -moz-transition: color 0.4s;
+      -webkit-transition: color 0.4s;
+      transition: color 0.4s;
+      -moz-transition: background-color 0.4s;
+      -webkit-transition: background-color 0.4s;
+      transition: background-color 0.4s; }
+    #sidenav nav.container div a.dummy {
+      display: none; }
+    #sidenav nav.container div a.lv1 {
+      color: #fdf1dc;
+      display: block;
+      font-size: 100%;
+      line-height: 125%;
+      border-color: #7a200d;
+      padding-top: 0.35em;
+      padding-bottom: 0.35em;
+      padding-left: 0.3em;
+      padding-right: 0.1em;
+      cursor: pointer;
+      background-color: #7a200d;
+      margin-right: 0.4em; }
+    #sidenav nav.container div a.lv1.parent {
+      font-size: 140%;
+      margin-right: 0;
+      border-top: 0.1em solid rgba(0, 0, 0, 0.15); }
+    #sidenav nav.container div a.lv1:hover {
+      background-color: #3c1710; }
+    #sidenav nav.container div a.lv2 {
+      display: block;
+      font-size: 105%;
+      margin-right: 0.4em;
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+      padding-left: 2em;
+      padding-right: 2em;
+      text-indent: -1em;
+      cursor: pointer;
+      border-right: 0.02em solid #7a200d;
+      background-color: #fdf1dc; }
+    #sidenav nav.container div a.lv2.first {
+      border-top: none; }
+    #sidenav nav.container div a.lv2.restart {
+      border-top: 0.02em solid #7a200d; }
+    #sidenav nav.container div a.lv2.last {
+      border-bottom: none; }
+    #sidenav nav.container div a.lv2.parent {
+      border-bottom: 0.2em solid #7a200d; }
+    #sidenav nav.container div a.lv2.last.end {
+      border-bottom: 0.02em solid #7a200d; }
+    #sidenav nav.container div a.lv2:hover {
+      background-color: #dac7ab; }
+    #sidenav nav.container div a.lv3 {
+      display: block;
+      font-size: 90%;
+      margin-right: 1em;
+      padding-top: 0.11em;
+      padding-bottom: 0.11em;
+      padding-left: 2em;
+      padding-right: 2em;
+      cursor: pointer;
+      background-color: #fce7cb;
+      border-right: 0.02em solid #7a200d;
+      color: black; }
+    #sidenav nav.container div a.lv3.first {
+      padding-top: 0.5em; }
+    #sidenav nav.container div a.lv3.last {
+      padding-bottom: 0.5em; }
+    #sidenav nav.container div a.lv3.last.end {
+      padding-bottom: 0.5em;
+      border-bottom: 0.02em solid #7a200d; }
+    #sidenav nav.container div a.lv3:hover {
+      background-color: #c6bba4;
+      color: #7a200d; }
+
+#sidenav:hover {
+  left: 0; }
+
+/*# sourceMappingURL=sidenav.css.map */

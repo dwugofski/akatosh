@@ -1,0 +1,34 @@
+#content #header {
+  display: none; }
+
+#content #main #characterbox div.character div.charblock {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+  #content #main #characterbox div.character div.charblock div.middle {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    width: auto;
+    margin: 0; }
+    #content #main #characterbox div.character div.charblock div.middle h5 {
+      display: block;
+      margin-left: 1em;
+      page-break-after: avoid; }
+    #content #main #characterbox div.character div.charblock div.middle p {
+      page-break-inside: initial;
+      orphans: 3;
+      widows: 4; }
+
+#content #main #characterbox #spellbox {
+  background-color: transparent;
+  box-shadow: none;
+  width: auto !important;
+  margin: 0;
+  padding: 0; }
+  #content #main #characterbox #spellbox div.spellblock {
+    width: auto;
+    page-break-inside: avoid; }
+
+/*# sourceMappingURL=character.css.map */

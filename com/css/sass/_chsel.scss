@@ -1,0 +1,49 @@
+body #content #main div.link_chunk {
+	border-style: solid;
+	border-width: 0.2em;
+	border-color: $bold_red;
+
+	a.chsel {
+		display: block;
+		position: relative;
+
+		div.imgholder {
+			display: block;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			padding: -0.1em 0em -0.1em 0em;
+			opacity: 1;
+			background-color: $light_brown;
+			@include transition(opacity, 0.4s);
+		}
+		p {
+			z-index: 3;
+			position: relative;
+			margin: 0;
+			padding: 0.5em;
+			color: $bold_red;
+			font-size: 150%;
+			font-family: $title_font;
+			font-weight: bold;
+			background-image: linear-gradient(to right, $light_brown, $light_brown, transparent);
+			@include transition(color, 0.4s);
+			@include transition(background-color, 0.4s);
+			@include transition(background-image, 0.4s);
+		}
+	}
+	a.chsel:hover {
+
+		p {
+			color: white;
+			font-weight: normal;
+			background-color: $quite_darker;
+			background-image: none;
+		}
+
+		div.imgholder {
+			opacity: 1;
+		}
+	}
+}

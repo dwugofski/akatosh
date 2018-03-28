@@ -1,0 +1,38 @@
+#heading {
+  display: none; }
+
+#content #header {
+  display: none; }
+#content #main #creaturesearchbox {
+  display: none; }
+#content #main div#creaturebox {
+  columns: 1; }
+  #content #main div#creaturebox div.moblock {
+    font-size: 100%;
+    display: inline-block;
+    page-break-after: always; }
+    #content #main div#creaturebox div.moblock div.middle {
+      background-color: transparent;
+      border-radius: 0;
+      box-shadow: none;
+      margin: 0;
+      width: auto; }
+      #content #main div#creaturebox div.moblock div.middle div.title {
+        width: auto; }
+      #content #main div#creaturebox div.moblock div.middle div.top_props, #content #main div#creaturebox div.moblock div.middle div.abilities, #content #main div#creaturebox div.moblock div.middle div.bot_props, #content #main div#creaturebox div.moblock div.middle div.feats, #content #main div#creaturebox div.moblock div.middle div.actions, #content #main div#creaturebox div.moblock div.middle div.reactions {
+        margin: 0;
+        margin-top: 1.5em;
+        width: auto; }
+        #content #main div#creaturebox div.moblock div.middle div.top_props prop, #content #main div#creaturebox div.moblock div.middle div.top_props div.prop, #content #main div#creaturebox div.moblock div.middle div.abilities prop, #content #main div#creaturebox div.moblock div.middle div.abilities div.prop, #content #main div#creaturebox div.moblock div.middle div.bot_props prop, #content #main div#creaturebox div.moblock div.middle div.bot_props div.prop, #content #main div#creaturebox div.moblock div.middle div.feats prop, #content #main div#creaturebox div.moblock div.middle div.feats div.prop, #content #main div#creaturebox div.moblock div.middle div.actions prop, #content #main div#creaturebox div.moblock div.middle div.actions div.prop, #content #main div#creaturebox div.moblock div.middle div.reactions prop, #content #main div#creaturebox div.moblock div.middle div.reactions div.prop {
+          margin: 0 5% 0 5%;
+          width: 90%; }
+        #content #main div#creaturebox div.moblock div.middle div.top_props h3, #content #main div#creaturebox div.moblock div.middle div.abilities h3, #content #main div#creaturebox div.moblock div.middle div.bot_props h3, #content #main div#creaturebox div.moblock div.middle div.feats h3, #content #main div#creaturebox div.moblock div.middle div.actions h3, #content #main div#creaturebox div.moblock div.middle div.reactions h3 {
+          margin: 0 5% 0 5%;
+          width: 90%; }
+      #content #main div#creaturebox div.moblock div.middle div.abilities {
+        width: 80%;
+        margin-left: 10%; }
+    #content #main div#creaturebox div.moblock hr.ender {
+      display: none; }
+
+/*# sourceMappingURL=creature.css.map */

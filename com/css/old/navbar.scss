@@ -1,0 +1,115 @@
+
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
+@import 'sizes';
+
+#navbar {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: $bold_red;
+	overflow: visible;
+	box-shadow: 0px 2px 5px $dark_red;
+	z-index: 4;
+	min-width: $min_width_delta;
+
+	nav.links {
+		height: 100%;
+		float: left;
+
+		span.link {
+			color: $light_brown;
+			z-index: 3;
+			background-color: $bold_red;
+			border-bottom-style: none;
+			display: inline-block;
+			vertical-align: middle;
+			cursor: pointer;
+			-webkit-user-select: none; 
+			font-weight: normal;
+			font-size: 115%;
+			float: left;
+			position: relative;
+			outline: none;
+
+			@include transition(background-color, 0.4s);
+
+			a {
+				color: $light_brown;
+				white-space: nowrap;
+				display: block;
+				height: 20px;
+				padding: 15px 15px 15px 15px;
+			}
+
+			div.tooltip {
+				visibility: hidden;
+				position: absolute;
+				top: 50px;
+				left: 0;
+				background-color: $dark_red;
+				min-width: 30px;
+				min-height: 30px;
+				padding: 10px;
+				column-count: 2;
+				font-weight: normal;
+				opacity: 0;
+				
+				@include transition(visibility, 0.4s);
+				@include transition(opacity, 0.4s);
+
+				a {
+					padding: 0;
+					height: auto;
+				}
+				a:hover, a:active {
+					color: $bright_red;
+				}
+			}
+		}
+		span.link.home {
+			height: 40px;
+			width: 30px;
+			display: block;
+			float: left;
+			padding: 5px;
+			background-image: url("../../res/com/home_icon.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: pointer;
+			border: none;
+
+			a {
+				height: 40px;
+				width: 30px;
+				display: block;
+				padding: 0;
+			}
+		}
+		span.link:hover, span.link:focus {
+			background-color: $dark_red;
+
+			div.tooltip {
+				display: inline-block;
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		span.link.active {
+			background-color: $light_red;
+
+			div.tooltip {
+				background-color: $light_red;
+			}
+		}
+
+		gap {
+			display: inline-block;
+			width: 10px;
+			height: 45px;
+			float: left;
+		}
+	}/*END LINKS*/
+}

@@ -1,0 +1,40 @@
+
+#content #main #header{
+	display: block;
+}
+
+body #content #main section {
+	columns: 2;
+	page-break-after: always;
+
+	chapter {
+
+		loc, span.loc {
+			font-style: italic;
+		}
+
+		quest, span.quest {
+			font-style: italic;
+		}
+
+		enemy, span.enemy {
+			font-weight: normal;
+		}
+
+		div.tablewrap table {
+			box-shadow: none;
+			font-size: 75%;
+			max-width: 100%;
+		}
+		div.tablewrap.full {
+			column-span: all;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			page-break-inside: avoid;
+
+			table {
+				width: 100%;
+			}
+		}
+	}
+}

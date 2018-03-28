@@ -1,0 +1,141 @@
+body #content #main {
+	margin: 5px;
+    overflow: hidden;
+    min-height: 50px;
+	min-width: $min_width;
+	padding-bottom: 10em;
+
+	div.selection_bar {
+		width: 48em;
+		margin: 0 auto;
+		margin-top: 1em;
+		border-bottom: 0.1em solid $bold_red;
+		border-top: 0.1em solid $bold_red;
+
+		a {
+			color: $bold_red;
+			font-family: $serif-font;
+			font-size: 110%;
+			padding: 0.6em;
+			@include transition(color, 0.4s);
+			@include transition(background-color, 0.4s);
+			max-width: 45%;
+		}
+		a:hover {
+			background-color: $bold_red;
+			color: $light_brown;
+		}
+		a.last {
+			padding-right: 1.2em;
+			float: left;
+		}
+		a.next {
+			padding-left: 1.2em;
+			float: right;
+		}
+	}
+
+	section {
+		width: 48em;
+		padding: 0.6em;
+		margin: 0 auto;
+		display: block;
+
+		a.anchor {
+			position: relative;
+			visibility: hidden;
+			top: -2.2em;
+			display: inline-block;
+		}
+
+		.bred {
+			color: $bold_red;
+		}
+
+/* ------------------------------ ALIGNMENT STYLES ------------------------------ */
+		.lal {
+			display: block;
+			text-align: left;
+		}
+		.ral {
+			display: block;
+			text-align: right;
+		}
+		.cal {
+			display: block;
+			text-align: center;
+		}
+	}
+
+/* ------------------------------ FLOAT STYLES ------------------------------ */
+	.fl {
+		float: left;
+	}
+	.fr {
+		float: right;
+	}
+	.fg {
+		height: 10px;
+		width: 1em;
+	}
+	.clearer {
+		clear: both;
+	}
+	.clearr {
+		clear: right;
+	}
+	.clearl {
+		clear: left;
+	}
+
+/* ------------------------------ CHAPTER SELECT STYLES ------------------------------ */
+	div.link_chunk {
+		border-style: solid;
+		border-width: 0.2em;
+		border-color: $bold_red;
+
+		a.chsel {
+			display: block;
+			position: relative;
+
+			div.imgholder {
+				display: block;
+				z-index: 2;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				padding: -0.1em 0em -0.1em 0em;
+				opacity: 1;
+				background-color: $light_brown;
+				@include transition(opacity, 0.4s);
+			}
+			p {
+				z-index: 3;
+				position: relative;
+				margin: 0;
+				padding: 0.5em;
+				color: $bold_red;
+				font-size: 150%;
+				font-family: $title_font;
+				font-weight: bold;
+				background-image: linear-gradient(to right, $light_brown, $light_brown, transparent);
+				@include transition(color, 0.4s);
+				@include transition(background-color, 0.4s);
+				@include transition(background-image, 0.4s);
+			}
+		}
+		a.chsel:hover {
+
+			p {
+				color: white;
+				font-weight: normal;
+				background-color: $quite_darker;
+				background-image: none;
+			}
+
+			div.imgholder {
+				opacity: 1;
+			}
+		}
+	}
+} /*END MAIN*/

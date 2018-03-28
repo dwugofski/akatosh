@@ -1,0 +1,93 @@
+#navbar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #7a200d;
+  overflow: visible;
+  box-shadow: 0px 2px 5px #3c1710;
+  z-index: 4;
+  min-width: 816px;
+  /*END LINKS*/ }
+  #navbar nav.links {
+    height: 100%;
+    float: left; }
+    #navbar nav.links span.link {
+      color: #fdf1dc;
+      z-index: 3;
+      background-color: #7a200d;
+      border-bottom-style: none;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      font-weight: normal;
+      font-size: 115%;
+      float: left;
+      position: relative;
+      outline: none;
+      -moz-transition: background-color 0.4s;
+      -webkit-transition: background-color 0.4s;
+      transition: background-color 0.4s; }
+      #navbar nav.links span.link a {
+        color: #fdf1dc;
+        white-space: nowrap;
+        display: block;
+        height: 20px;
+        padding: 15px 15px 15px 15px; }
+      #navbar nav.links span.link div.tooltip {
+        visibility: hidden;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #3c1710;
+        min-width: 30px;
+        min-height: 30px;
+        padding: 10px;
+        column-count: 2;
+        font-weight: normal;
+        opacity: 0;
+        -moz-transition: visibility 0.4s;
+        -webkit-transition: visibility 0.4s;
+        transition: visibility 0.4s;
+        -moz-transition: opacity 0.4s;
+        -webkit-transition: opacity 0.4s;
+        transition: opacity 0.4s; }
+        #navbar nav.links span.link div.tooltip a {
+          padding: 0;
+          height: auto; }
+        #navbar nav.links span.link div.tooltip a:hover, #navbar nav.links span.link div.tooltip a:active {
+          color: #e9bca7; }
+    #navbar nav.links span.link.home {
+      height: 40px;
+      width: 30px;
+      display: block;
+      float: left;
+      padding: 5px;
+      background-image: url("../../res/com/home_icon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      border: none; }
+      #navbar nav.links span.link.home a {
+        height: 40px;
+        width: 30px;
+        display: block;
+        padding: 0; }
+    #navbar nav.links span.link:hover, #navbar nav.links span.link:focus {
+      background-color: #3c1710; }
+      #navbar nav.links span.link:hover div.tooltip, #navbar nav.links span.link:focus div.tooltip {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1; }
+    #navbar nav.links span.link.active {
+      background-color: #903523; }
+      #navbar nav.links span.link.active div.tooltip {
+        background-color: #903523; }
+    #navbar nav.links gap {
+      display: inline-block;
+      width: 10px;
+      height: 45px;
+      float: left; }
+
+/*# sourceMappingURL=navbar.css.map */

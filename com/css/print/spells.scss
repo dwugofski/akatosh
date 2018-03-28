@@ -1,0 +1,32 @@
+
+#content {
+	#header {
+		display: none;
+	}
+
+	#main {
+		#spellsearchbox {
+			display: none;
+		}
+
+		#spellbox {
+			columns: 2;
+
+			div.spellblock {
+				font-size: 80%;
+				width: 30em;
+
+				div.middle{
+					background-color: transparent;
+					border-radius: 0;
+					box-shadow: none;
+				}
+
+				hr.ender {
+					display: none;
+				}
+			}
+		}
+		
+	}
+}

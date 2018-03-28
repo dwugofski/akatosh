@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,uCAAwC;EACvC,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,GAAG;EACd,aAAa,EAAE,CAAC;EAEhB,kDAAW;IACV,aAAa,EAAE,CAAC;IAChB,UAAU,EAAE,IAAI;IAChB,WAAW,EAAE,CAAC;IAEd,6DAAW;MACV,KAAK,EAAE,IAAI;MACX,WAAW,EAAE,CAAC;EAIhB,gDAAS;IACR,aAAa,EAAE,CAAC",
+"sources": ["smallspells.scss"],
+"names": [],
+"file": "smallspells.css"
+}

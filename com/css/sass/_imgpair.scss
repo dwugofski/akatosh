@@ -1,0 +1,33 @@
+
+body #content #main div.imagepair {
+	div.imgwrap {
+		width: 40%;
+		float: right;
+	}
+
+	div.textwrap {
+		width: 56%;
+		float: left;
+
+		div.tcol {
+			display: table;
+			width: 100%;
+
+			div {
+				display: table-cell;
+			}
+		}
+	}
+}
+body #content #main div.imagepair.imgleft {
+
+	div.imgwrap {
+		float: left;
+	}
+
+	div.textwrap {
+		float: right;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}

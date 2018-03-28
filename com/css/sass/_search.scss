@@ -1,0 +1,117 @@
+body #content #main div.searchbox {
+	z-index: 2;
+	width: 44em;
+	margin: 0 auto;
+	position: relative;
+	padding: 1em;
+	background-color: $light_brown;
+	font-family: $sans_font;
+	color: $bold_red;
+	border-radius: 0.2em;
+	box-shadow: 0 0 2em $dull_beige;
+	overflow: hidden;
+	margin-bottom: 2em;
+	line-height: inherit;
+
+	h1 {
+		margin-top: 0;
+		margin-bottom: 0.2em;
+	}
+
+	hr {
+		background-image: none;
+		background-color: $bold_red;
+	}
+
+	span.lbl {
+		font-weight: bold;
+		height: 100%;
+		vertical-align:top;
+	}
+	span.later {
+		margin-left: 1em;
+	}
+
+	div.inprow {
+		font-size: inherit;
+		margin-top: 1.2em;
+		clear: both;
+		margin-bottom: 0.2em;
+
+		input.searchinp {
+			display: block;
+			box-shadow: 0 0 0.5em $dull_beige;
+			border: none;
+			font-size: inherit;
+			padding: 0.5em;
+			float: left;
+			width: 70%;
+		}
+		input.searchinp:focus {
+			box-shadow: 0 0 0.5em $light_grey inset;
+			outline: none;
+		}
+
+		span.select2-container {
+			margin-left: 0.5em;
+
+			span.select2-selection {
+				border-radius: 0;
+				font-size: inherit;
+				border: none;
+				box-shadow: 0 0 0.5em $dull_beige;
+				padding: 0.2em;
+
+				ul.select2-selection__rendered li.select2-selection__choice {
+					background-color: $faded_red;
+					border-radius: 0;
+					border: 0.1em solid $bold_red;
+					text-indent: -0.4em;
+
+					span.select2-selection__choice__remove {
+						color: $bold_red;
+					}
+				}
+			}
+		}
+
+		button {
+			-webkit-appearance: none;
+			display: inline-block;
+			font-size: inherit;
+			box-shadow: 0 0 0.5em $dull_beige;
+			border: none;
+			padding: 0;
+			height: 2em;
+			color: $bold_red;
+			background-color: $light_brown;
+			cursor: pointer;
+			font-family: $sans_font;
+			margin-left: 1em;
+			padding: 0.1em 1em 0 1em;
+			font-weight: bold;
+		}
+		button:hover {
+			background-color: $bold_red;
+			color: $light_brown;
+		}
+		button:active {
+			box-shadow: 0 0 0.5em $dull_beige inset;
+		}
+		button:focus {
+			outline: none;
+		}
+
+		select.lstinp {
+			font-size: inherit;
+			box-shadow: 0 0 0.5em $dull_beige;
+			border: none;
+			padding: 0.5em;
+			font-weight: bold;
+		}
+		select.lstinp:focus {
+			box-shadow: 0 0 0.5em $light_grey inset;
+			outline: none;
+		}
+	}
+}

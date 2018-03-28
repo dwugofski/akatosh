@@ -1,0 +1,24 @@
+#heading {
+  height: 3.78em;
+  padding-left: 1em;
+  background-image: url("../../res/com/akatosh_side.png");
+  background-repeat: no-repeat;
+  background-position: 30em 0;
+  background-color: white;
+  overflow: visible;
+  white-space: nowrap;
+  min-width: 800px; }
+  #heading a {
+    margin: 0;
+    font-size: 300%;
+    font-family: "Fondamento", serif;
+    font-variant: small-caps;
+    color: #7a200d;
+    cursor: pointer;
+    -webkit-user-select: none;
+    font-weight: bold;
+    overflow: visible; }
+  #heading a:hover {
+    color: #3c1710; }
+
+/*# sourceMappingURL=heading.css.map */

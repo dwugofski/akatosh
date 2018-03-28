@@ -1,0 +1,178 @@
+
+@import 'colors';
+@import 'fonts';
+
+#content #main div.moblock {
+	min-height: 50pt;
+	display: block;
+	text-align: left;
+	margin-bottom: 1.5em;
+
+	* {
+		padding: 0;
+		line-height: 1em;
+		z-index: 2;
+		width: 44em;
+		margin: 0 auto;
+	}
+
+/* ------------------------------ HEADING STYLES ------------------------------ */
+	h1 {
+		font-family: $title_font;
+		color: inherit;
+		border-bottom: 0.15em solid $bold_red;
+		font-weight: 700;
+		font-size: 200%;
+		margin-bottom: 0.25em;
+		font-variant: small-caps;
+		letter-spacing: 0.07em;
+		text-decoration: none;
+		text-align: left;
+		width: auto;
+	}
+
+	h2 {
+		font-family: $sans_font;
+		display: block;
+		font-weight: normal;
+	    font-style: italic;
+	    font-size: 90%;
+	    margin: 0;
+		line-height: 1em;
+		text-decoration: none;
+		text-align: left;
+		border: none;
+		width: auto;
+	}
+
+	h3 {
+		border-bottom: 0.08em solid $bold_red;
+		color: inherit;
+	    font-size: 150%;
+	    font-variant: small-caps;
+	    font-weight: normal;
+	    letter-spacing: 0.13em;
+	    margin: 0;
+	    margin-bottom: 0.3em;
+	    break-inside: avoid-column;
+	    break-after: avoid-column;
+		line-height: 1.1em;
+		text-decoration: none;
+		margin-left: 10%;
+		margin-right: 10%;
+		width: auto;
+	}
+
+	h4 {
+		font-family: $serif_font;
+		color: inherit;
+		font-weight: bold;
+		line-height: 1.4em;
+		text-indent: -1em;
+		display: inline;
+		margin-right: 0.6em;
+		font-size: 1em;
+	}
+
+	div.bar {
+	    display: none;
+	}
+
+	div.mobidname {
+		display: none;
+	}
+
+	svg {
+	    display: none;
+	}
+
+	hr.ender {
+		display: block;
+	    margin-bottom: 0.5em;
+	    margin-top: 2em;
+	    border: 0.15em solid #7A200D;
+	    height: 0;
+	    background-image: none;
+	}
+
+/* ------------------------------ STRUCTURE STYLES ------------------------------ */
+	div.middle{
+		padding: 1em;
+		background-color: $light_brown;
+		font-family: $sans_font;
+		color: $bold_red;
+		border-radius: 0.2em;
+		box-shadow: 0 0 2em $dull_beige;
+		overflow: hidden;
+
+		div.top_props, div.abilities, div.bot_props, div.feats, div.actions, div.reactions{
+			margin-top: 1.5em;
+		}
+
+		prop {
+			display: block;
+			padding-left: 1em;
+			text-indent: -1em;
+			line-height: 0.9em;
+			color: black;
+			margin-left: 10%;
+			margin-right: 10%;
+			width: auto;
+
+			p {
+				display: inline;	
+				margin-top: 0;
+				margin-bottom: 1em;
+				text-indent: 0.5em;
+				fonst-size: 100%;
+				line-height: 1.2em;
+			}
+		}
+
+/* ------------------------------ ABILITIES STYLES ------------------------------ */
+		div.abilities {
+			border: 0.15em solid $bold_red;
+			padding: 0.5em;
+			margin-left: 10%;
+			margin-right: 10%;
+			width: auto;
+
+			table {
+				width: 100%;
+				border: 0;
+				border-collapse: collapse;
+				margin-left: 0 auto;
+
+				th, td {
+					width: 35px;
+					text-align: center;
+					line-height: 1.4em;
+					font-size: 111%;
+					border-left: 0.1em solid $bold_red;
+				}
+				th.col1, td.col1 {
+					border-left: 0;
+				}
+			}
+
+		}
+
+/* ------------------------------ FEATS & ACTIONS STYLES ------------------------------ */
+		div.feats, div.actions {
+			h4 {
+				font-style: italic;
+			}
+
+			prop {
+				padding-left: 0px;
+				text-indent: 0px;
+				line-height: 1em;
+				color: black;
+				padding-bottom: 7px;
+			}
+			prop.naked {
+				text-indent: 5px;
+			}
+		}
+	}/*END MIDDLE*/
+}

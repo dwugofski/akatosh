@@ -1,0 +1,79 @@
+
+body #content #main {
+	div.tablewrap {
+		margin-top: 1em;
+		text-align: center;
+
+		table {
+			border: 0.3em solid $bold_red;
+			border-collapse: collapse;
+			text-indent: 0px;
+			display: table;
+			font-size: 85%;
+			margin: auto;
+			max-width: 85%;
+			// box-shadow: 0 0 0.5em $dull_beige;
+			overflow-x: hidden;
+
+			caption {
+				background-color: $bold_red;
+				color: white;
+				font-weight: bold;
+				border-top: 0.2em solid $bold_red;
+				padding-top: 0.2em;
+				min-width: 15em;
+			}
+
+			tr {
+				th, td {
+					padding-left: 0.5em;
+					padding-right: 0.5em;
+					margin: 0;
+					line-height: 1.3em;
+					text-align: left;
+				}
+
+				.center_al{
+					text-align: center;
+					white-space: nowrap;
+				}
+				.ind {
+					text-indent: 1em;
+				}
+				.remark {
+					font-size: 80%;
+				}
+			}
+			tr:nth-child(even) {
+				background-color: $transp_red;
+			}
+			tr:first-child {
+				background-color: $bold_red;
+				color: white;
+			}
+		}
+		table.cblock {
+			tr:not(:first-child) {
+				background-color: transparent;
+			}
+			tr:not(:first-child).colored {
+				background-color: $transp_red;
+			}
+		}
+	}
+	
+	div.tablewrap.full table {
+		width: 85%;
+		margin: 0 auto;
+		display: table;
+	}
+
+	div.tablewrap.moff {
+		display: inline-block;
+
+		table {
+			margin: 0;
+			margin-left: 1em;
+		}
+	}
+}

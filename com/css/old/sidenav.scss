@@ -1,0 +1,127 @@
+
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
+
+#sidenav::-webkit-scrollbar {
+	display: none;
+}
+#sidenav {
+	display: block;
+	height: auto;
+	position: fixed;
+	top: 110px;
+	left: -20em;
+	overflow-y: auto;
+	font-family: $sans_font;
+	z-index: 3;
+	color: $bold_red;
+	direction: rtl;
+	padding-right: 2em;
+	width: 20em;
+
+	@include transition(left, 0.4s);
+
+	nav.container {
+		display: block;
+		direction: ltr;
+		padding-bottom: 10em;
+
+		div {
+			a {
+				@include transition(color, 0.4s);
+				@include transition(background-color, 0.4s);
+			}
+
+			a.dummy {
+				display: none;
+			}
+
+			a.lv1 {
+				color: $light_brown;
+				display: block;
+				font-size: 100%;
+				line-height: 125%;
+				border-color: $bold_red;
+				padding-top: 0.35em;
+				padding-bottom: 0.35em;
+				padding-left: 0.3em;
+				padding-right: 0.1em;
+				cursor: pointer;
+				background-color: $bold_red;
+				margin-right: 0.4em;
+			}
+			a.lv1.parent {
+				font-size: 140%;
+				margin-right: 0;
+				border-top: 0.1em solid $slightly_darker;
+			}
+			a.lv1:hover{
+				background-color: $dark_red;
+			}
+
+			a.lv2 {
+				display: block;
+				font-size: 105%;
+				margin-right: 0.4em;
+				padding-top: 0.4em;
+				padding-bottom: 0.4em;
+				padding-left: 2em;
+				padding-right: 2em;
+				text-indent: -1em;
+				cursor: pointer;
+				border-right: 0.02em solid $bold_red;
+				background-color: $light_brown;
+			}
+			a.lv2.first {
+				border-top: none;
+			}
+			a.lv2.restart {
+				border-top: 0.02em solid $bold_red;
+			}
+			a.lv2.last {
+				border-bottom: none;
+			}
+			a.lv2.parent {
+				border-bottom: 0.2em solid $bold_red;
+			}
+			a.lv2.last.end {
+				border-bottom: 0.02em solid $bold_red;
+			}
+			a.lv2:hover {
+				background-color: $dull_light_brown;
+			}
+
+			a.lv3 {
+				display: block;
+				font-size: 90%;
+				margin-right: 1em;
+				padding-top: 0.11em;
+				padding-bottom: 0.11em;
+				padding-left: 2em;
+				padding-right: 2em;
+				cursor: pointer;
+				background-color: $bright_beige;
+				border-right: 0.02em solid $bold_red;
+				color: black;
+			}
+			a.lv3.first {
+				padding-top: 0.5em;
+			}
+			a.lv3.last {
+				padding-bottom: 0.5em;
+			}
+			a.lv3.last.end {
+				padding-bottom: 0.5em;
+				border-bottom: 0.02em solid $bold_red;
+			}
+			a.lv3:hover {
+				background-color: $dull_beige;
+				color: $bold_red;
+			}
+		}
+	}
+}
+#sidenav:hover {
+	left: 0;
+}

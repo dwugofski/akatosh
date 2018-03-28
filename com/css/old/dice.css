@@ -1,0 +1,49 @@
+*.die {
+  color: black !important; }
+
+*.dmg {
+  text-decoration: underline !important;
+  color: #cc0000 !important; }
+
+*.dmg.acid {
+  color: #B3BD1A !important; }
+
+*.dmg.cold {
+  color: #207F86 !important; }
+
+*.dmg.fire {
+  color: #FF7E0F !important; }
+
+*.dmg.force {
+  color: #EF4010 !important; }
+
+*.dmg.lightning {
+  color: #B149EA !important; }
+
+*.dmg.necro {
+  color: #661A1A !important; }
+
+*.dmg.poison {
+  color: #5AB417 !important; }
+
+*.dmg.psychic {
+  color: #B41771 !important; }
+
+*.dmg.rad {
+  color: #48E5A7 !important; }
+
+*.dmg.thun {
+  color: #486AE5 !important; }
+
+*.dmg.slash, *.dmg.bludge, *.dmg.pierce {
+  color: #999999 !important; }
+
+*.heal {
+  font-style: italic !important;
+  text-decoration: underline !important;
+  color: #00cc00 !important; }
+
+*.heal.tmp {
+  text-decoration: none !important; }
+
+/*# sourceMappingURL=dice.css.map */

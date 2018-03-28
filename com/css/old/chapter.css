@@ -1,0 +1,26 @@
+section {
+  /* ------------------------------ MISC SECT STYLES ------------------------------ */
+  /* END CHAPTER */ }
+  section .moblink {
+    display: none; }
+  section #creaturebox {
+    margin-top: 3em; }
+  section chapter, section div.chapter {
+    /* ------------------------------ CUSTOM BLOCK STYLES ------------------------------ */ }
+    section chapter item, section chapter span.item, section div.chapter item, section div.chapter span.item {
+      font-style: italic; }
+    section chapter die, section chapter b.die, section div.chapter die, section div.chapter b.die {
+      display: inline;
+      font-weight: bold; }
+    section chapter enc, section chapter span.enc, section div.chapter enc, section div.chapter span.enc {
+      font-variant: small-caps;
+      font-weight: bold;
+      font-size: 111%;
+      color: #7a200d; }
+    section chapter loot, section chapter span.loot, section div.chapter loot, section div.chapter span.loot {
+      font-variant: small-caps;
+      font-weight: bold;
+      font-size: 111%;
+      color: #1A7400; }
+
+/*# sourceMappingURL=chapter.css.map */

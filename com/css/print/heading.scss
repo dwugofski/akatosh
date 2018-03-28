@@ -1,0 +1,11 @@
+
+@import 'colors';
+@import 'fonts';
+
+body #heading {
+	background-image: none;
+	color: $bold_red;
+	font-family: $title_font;
+	font-size: 110%;
+	font-variant: small-caps;
+}

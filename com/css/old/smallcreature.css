@@ -1,0 +1,15 @@
+#content #main .moblock {
+  width: auto;
+  font-size: 85%;
+  margin-bottom: 0; }
+  #content #main .moblock .middle {
+    border-radius: 0;
+    box-shadow: none;
+    padding-top: 0; }
+    #content #main .moblock .middle prop table {
+      width: 100%;
+      margin-left: 0; }
+  #content #main .moblock hr.ender {
+    margin-bottom: 0; }
+
+/*# sourceMappingURL=smallcreature.css.map */

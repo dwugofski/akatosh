@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D&amp;D Creatures</title>
+	<link rel="stylesheet" type="text/css" href="../../com/css/mob.css">
+	<link rel="stylesheet" type="text/css" href="../../com/css/body.css">
+	<link rel="stylesheet" type="text/css" href="../../com/css/dice.css">
+	<script type="text/javascript" src="../../com/js/mustache.js"></script>
+	<script type="text/javascript" src="loadcreatures.js"></script>
+	<script type="text/javascript" src="creature_template.js"></script>
+	<!--<script type="text/javascript" src="creatures/animatedarmor.js"></script>-->
+	<script type="text/javascript">	
+		var creature_list = [
+			"skeleton",
+			"zombie",
+			"shadow",
+			"ayleidknight"
+		];
+			
+		creature_list = load_creatures(creature_list,"");
+		
+		window.onload = function(){
+			Mustache.parse(creature_template);
+			
+			var creatures = "";
+			creature_list.forEach(function(item, index) {
+				var creature = window[item](creature_template);
+				creatures += creature;
+			});
+			
+			document.getElementById('creatures').innerHTML = creatures;
+		};
+	</script>
+</head>
+<body>
+
+<div id="creatures"></div>
+
+</body>

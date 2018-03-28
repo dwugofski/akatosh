@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-size: 12pt;
+  background-color: #fdf1dc;
+  font-family: "Noto Sans", "Calibri", sans-serif; }
+  body a, body a:hover, body a:active {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: inherit; }
+  body #media_ident {
+    display: none;
+    list-style-type: none; }
+
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+    background-image: url("../../res/pages/paper.jpg");
+    background-size: 8.5in 11in; }
+  body {
+    font-size: 11pt;
+    background-color: transparent; }
+    body #media_ident {
+      list-style-type: disc !important; } }
+
+/*# sourceMappingURL=body.css.map */

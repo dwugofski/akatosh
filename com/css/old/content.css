@@ -1,0 +1,548 @@
+#content[min-width~="1080px"] #sidebar {
+  display: none; }
+
+#content {
+  background-color: #fdf1dc;
+  padding: 5px;
+  /* ------------------------------ SIDEBAR STYLES ------------------------------ */
+  /* ------------------------------ HEADER STYLES ------------------------------ */
+  /*END MAIN*/ }
+  #content #sidebar {
+    float: right;
+    width: 250px;
+    min-height: 450px;
+    margin: 5px;
+    display: none;
+    background-image: url("../../res/com/akatosh_up.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: calc(100% - 20px) 120px; }
+  #content #header {
+    background-color: black;
+    background-image: url("../../res/backs/imperial_city.png");
+    background-repeat: no-repeat;
+    background-position: 50% -100px;
+    height: 400px;
+    min-width: 800px;
+    position: relative;
+    box-shadow: inset 0 0 10px #000000; }
+    #content #header div {
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      position: absolute;
+      display: inline-block;
+      font-family: "Noto Sans", "Calibri", sans-serif;
+      cursor: default;
+      -webkit-user-select: none;
+      padding: 0 5px 0 5px; }
+    #content #header div.main {
+      font-size: 300%;
+      height: 60px;
+      line-height: 60px; }
+    #content #header div.sub {
+      font-size: 150%;
+      height: 30px;
+      line-height: 30px; }
+  #content #main {
+    margin: 5px;
+    overflow: hidden;
+    min-height: 50px;
+    min-width: 800px;
+    padding-bottom: 10em;
+    /* ------------------------------ SEARCH STYLES ------------------------------ */
+    /* ------------------------------ IMAGEPAIR STYLES ------------------------------ */
+    /* ------------------------------ LIST STYLES ------------------------------ */
+    /* ------------------------------ TABLE STYLES ------------------------------ */
+    /* ------------------------------ FLOAT STYLES ------------------------------ */
+    /* ------------------------------ CHAPTER SELECT STYLES ------------------------------ */ }
+    #content #main div.selection_bar {
+      width: 48em;
+      margin: 0 auto;
+      margin-top: 1em;
+      border-bottom: 0.1em solid #7a200d;
+      border-top: 0.1em solid #7a200d; }
+      #content #main div.selection_bar a {
+        color: #7a200d;
+        font-family: "Stoke", "Constantia", serif;
+        font-size: 110%;
+        padding: 0.6em;
+        -moz-transition: color 0.4s;
+        -webkit-transition: color 0.4s;
+        transition: color 0.4s;
+        -moz-transition: background-color 0.4s;
+        -webkit-transition: background-color 0.4s;
+        transition: background-color 0.4s;
+        max-width: 45%; }
+      #content #main div.selection_bar a:hover {
+        background-color: #7a200d;
+        color: #fdf1dc; }
+      #content #main div.selection_bar a.last {
+        padding-right: 1.2em;
+        float: left; }
+      #content #main div.selection_bar a.next {
+        padding-left: 1.2em;
+        float: right; }
+    #content #main section {
+      width: 48em;
+      padding: 0.6em;
+      margin: 0 auto;
+      display: block;
+      /* ------------------------------ HEADING STYLES ------------------------------ */
+      /* ------------------------------ IMAGE STYLES ------------------------------ */
+      /* ------------------------------ ALIGNMENT STYLES ------------------------------ */
+      /* ------------------------------ MISC STYLES ------------------------------ */ }
+      #content #main section a.anchor {
+        position: relative;
+        visibility: hidden;
+        top: -2.2em;
+        display: inline-block; }
+      #content #main section h1 {
+        margin: 0;
+        margin-top: 0.5em;
+        font-size: 250%;
+        font-family: "Stoke", "Constantia", serif;
+        font-variant: small-caps;
+        color: #7a200d;
+        cursor: default;
+        -webkit-user-select: none;
+        font-weight: bold;
+        page-break-after: avoid; }
+        #content #main section h1 a.anchor {
+          display: block;
+          top: -2.2em; }
+      #content #main section h1 + p {
+        text-indent: 0px; }
+      #content #main section h2 {
+        margin: 0px;
+        font-size: 150%;
+        font-family: "Metamorphous", serif;
+        color: #7a200d;
+        border-bottom: 0.2em solid #7a200d;
+        cursor: default;
+        -webkit-user-select: none;
+        font-weight: bold;
+        margin-top: 1em;
+        page-break-after: avoid; }
+        #content #main section h2 a.anchor {
+          display: block;
+          top: -2.2em; }
+      #content #main section h2 + p {
+        text-indent: 0px;
+        margin-top: 0.3em; }
+      #content #main section h3 {
+        font-family: "Stoke", "Constantia", serif;
+        font-size: 1.5em;
+        text-decoration: underline;
+        margin-bottom: 0.3em;
+        font-weight: bold;
+        page-break-after: avoid;
+        font-variant: small-caps; }
+        #content #main section h3 a.anchor {
+          display: block;
+          top: -2.2em; }
+      #content #main section h3 + p {
+        text-indent: 0px;
+        margin-top: 0.3em; }
+      #content #main section h4 {
+        font-family: "Metamorphous", serif;
+        font-size: 1em;
+        text-decoration: none;
+        margin-bottom: 0em;
+        font-weight: bold;
+        font-style: italic;
+        page-break-after: avoid; }
+      #content #main section h4 + p {
+        text-indent: 0px;
+        margin-top: 0.3em; }
+      #content #main section h5 {
+        font-family: "Metamorphous", serif;
+        font-size: 0.8em;
+        text-decoration: none;
+        margin-bottom: 0.3em;
+        margin-top: 0;
+        font-style: italic;
+        page-break-after: avoid;
+        color: #7a200d; }
+      #content #main section .bred {
+        color: #7a200d; }
+      #content #main section imagebox, #content #main section div.imagebox {
+        margin-top: 1em;
+        padding: 0.3em;
+        text-align: center;
+        display: block;
+        page-break-inside: avoid;
+        border: 0.15em solid #7a200d; }
+        #content #main section imagebox img, #content #main section div.imagebox img {
+          display: block;
+          width: 100%; }
+      #content #main section imagebox.half, #content #main section div.imagebox.half {
+        margin: 0, 0.2em, 0, 0.2em;
+        width: 47%; }
+      #content #main section imagebox.third, #content #main section div.imagebox.third {
+        margin-right: 1em;
+        margin-left: 1em;
+        width: 30%; }
+      #content #main section imagebox.fourth, #content #main section div.imagebox.fourth {
+        margin: 0, 0.2em, 0, 0.2em;
+        width: 24%; }
+      #content #main section imagebox img.viewer:hover, #content #main section div.imagebox.fourth img.viewer:hover {
+        cursor: zoom-in; }
+      #content #main section .lal {
+        display: block;
+        text-align: left; }
+      #content #main section .ral {
+        display: block;
+        text-align: right; }
+      #content #main section .cal {
+        display: block;
+        text-align: center; }
+      #content #main section span.u {
+        text-decoration: underline; }
+      #content #main section span.calc, #content #main section p.calc {
+        font-family: "Ubuntu Mono", monospace;
+        text-indent: 0;
+        font-weight: bold; }
+      #content #main section npc, #content #main section span.npc {
+        display: inline;
+        font-weight: bold;
+        font-style: italic;
+        color: #7a200d;
+        position: relative; }
+      #content #main section loc, #content #main section span.loc {
+        display: inline;
+        font-style: italic;
+        text-decoration: underline;
+        color: #7a200d;
+        position: relative; }
+      #content #main section quest, #content #main section span.quest {
+        display: inline;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline; }
+      #content #main section enemy, #content #main section span.enemy {
+        display: inline;
+        font-weight: bold;
+        letter-spacing: -0.1em;
+        color: #7a200d; }
+      #content #main section p {
+        text-indent: 1em;
+        margin-bottom: 0.3em;
+        widows: 2;
+        orphans: 2; }
+        #content #main section p a {
+          color: #7a200d;
+          text-decoration: underline; }
+        #content #main section p span.mono {
+          font-family: "Ubuntu Mono", monospace; }
+      #content #main section p.uind {
+        text-indent: 0; }
+      #content #main section p.calc {
+        text-align: center; }
+      #content #main section em {
+        color: #7a200d;
+        font-style: italic;
+        font-weight: bold; }
+      #content #main section footnote, #content #main section p.footnote {
+        font-family: "Fondamento", serif;
+        font-size: 0.9em;
+        font-weight: bold;
+        display: block; }
+      #content #main section footnote.remark, #content #main section p.footnote.remark {
+        margin-top: 0;
+        font-family: "Noto Sans", "Calibri", sans-serif;
+        font-size: 0.7em;
+        font-weight: normal; }
+      #content #main section quote, #content #main section p.quote {
+        display: inline-block;
+        border: 0.2em solid #7a200d;
+        color: #7a200d;
+        font-family: "Stoke", "Constantia", serif;
+        font-style: italic;
+        font-weight: bold;
+        page-break-inside: avoid;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-indent: 1em;
+        padding: 0.5em; }
+      #content #main section p.quote.short {
+        display: table;
+        margin: auto;
+        text-indent: 0px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center; }
+      #content #main section note, #content #main section p.note {
+        display: inline-block;
+        border: 0.2em solid #999999;
+        color: #999999;
+        font-size: 1em;
+        font-style: italic;
+        page-break-inside: avoid;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding: 0.5em; }
+      #content #main section p.note.red {
+        border: 0.2em solid #903523;
+        color: #903523; }
+      #content #main section div.racebox {
+        width: 31em; }
+      #content #main section hr {
+        background-image: linear-gradient(to right, #7a200d, transparent);
+        border: none;
+        height: 0.2em; }
+    #content #main div.searchbox {
+      z-index: 2;
+      width: 44em;
+      margin: 0 auto;
+      position: relative;
+      padding: 1em;
+      background-color: #fdf1dc;
+      font-family: "Noto Sans", "Calibri", sans-serif;
+      color: #7a200d;
+      border-radius: 0.2em;
+      box-shadow: 0 0 2em #c6bba4;
+      overflow: hidden;
+      margin-bottom: 2em;
+      line-height: inherit; }
+      #content #main div.searchbox h1 {
+        margin-top: 0;
+        margin-bottom: 0.2em; }
+      #content #main div.searchbox hr {
+        background-image: none;
+        background-color: #7a200d; }
+      #content #main div.searchbox span.lbl {
+        font-weight: bold;
+        height: 100%;
+        vertical-align: top; }
+      #content #main div.searchbox span.later {
+        margin-left: 1em; }
+      #content #main div.searchbox div.inprow {
+        font-size: inherit;
+        margin-top: 1.2em;
+        clear: both;
+        margin-bottom: 0.2em; }
+        #content #main div.searchbox div.inprow input.searchinp {
+          display: block;
+          box-shadow: 0 0 0.5em #c6bba4;
+          border: none;
+          font-size: inherit;
+          padding: 0.5em;
+          float: left;
+          width: 70%; }
+        #content #main div.searchbox div.inprow input.searchinp:focus {
+          box-shadow: 0 0 0.5em #bbbbbb inset;
+          outline: none; }
+        #content #main div.searchbox div.inprow span.select2-container {
+          margin-left: 0.5em; }
+          #content #main div.searchbox div.inprow span.select2-container span.select2-selection {
+            border-radius: 0;
+            font-size: inherit;
+            border: none;
+            box-shadow: 0 0 0.5em #c6bba4;
+            padding: 0.2em; }
+            #content #main div.searchbox div.inprow span.select2-container span.select2-selection ul.select2-selection__rendered li.select2-selection__choice {
+              background-color: #efe0d5;
+              border-radius: 0;
+              border: 0.1em solid #7a200d;
+              text-indent: -0.4em; }
+              #content #main div.searchbox div.inprow span.select2-container span.select2-selection ul.select2-selection__rendered li.select2-selection__choice span.select2-selection__choice__remove {
+                color: #7a200d; }
+        #content #main div.searchbox div.inprow button {
+          -webkit-appearance: none;
+          display: inline-block;
+          font-size: inherit;
+          box-shadow: 0 0 0.5em #c6bba4;
+          border: none;
+          padding: 0;
+          height: 2em;
+          color: #7a200d;
+          background-color: #fdf1dc;
+          cursor: pointer;
+          font-family: "Noto Sans", "Calibri", sans-serif;
+          margin-left: 1em;
+          padding: 0.1em 1em 0 1em;
+          font-weight: bold; }
+        #content #main div.searchbox div.inprow button:hover {
+          background-color: #7a200d;
+          color: #fdf1dc; }
+        #content #main div.searchbox div.inprow button:active {
+          box-shadow: 0 0 0.5em #c6bba4 inset; }
+        #content #main div.searchbox div.inprow button:focus {
+          outline: none; }
+        #content #main div.searchbox div.inprow select.lstinp {
+          font-size: inherit;
+          box-shadow: 0 0 0.5em #c6bba4;
+          border: none;
+          padding: 0.5em;
+          font-weight: bold; }
+        #content #main div.searchbox div.inprow select.lstinp:focus {
+          box-shadow: 0 0 0.5em #bbbbbb inset;
+          outline: none; }
+    #content #main div.imagepair div.imgwrap {
+      width: 40%;
+      float: right; }
+    #content #main div.imagepair div.textwrap {
+      width: 56%;
+      float: left; }
+      #content #main div.imagepair div.textwrap div.tcol {
+        display: table;
+        width: 100%; }
+        #content #main div.imagepair div.textwrap div.tcol div {
+          display: table-cell; }
+    #content #main div.imagepair.imgleft div.imgwrap {
+      float: left; }
+    #content #main div.imagepair.imgleft div.textwrap {
+      float: right;
+      padding-left: 2%;
+      padding-right: 2%; }
+    #content #main ul {
+      width: auto;
+      overflow: hidden;
+      margin-left: 1em;
+      padding-left: 0;
+      list-style-type: none;
+      font-style: italic;
+      font-size: 90%; }
+      #content #main ul li {
+        padding-left: 1em;
+        text-indent: -1em; }
+      #content #main ul li.heading {
+        font-weight: bold;
+        font-style: italic;
+        padding-left: 0;
+        text-indent: 0; }
+      #content #main ul li.doubleind {
+        padding-left: 2em; }
+    #content #main ul.untabbed {
+      margin-left: 0; }
+    #content #main ul.bulletted {
+      list-style-type: square;
+      list-style-position: outside;
+      font-size: 95%;
+      overflow: visible;
+      margin-left: 1.5em;
+      margin-right: 2.5em; }
+      #content #main ul.bulletted li {
+        text-indent: -1em; }
+    #content #main div.tablewrap {
+      margin-top: 1em;
+      text-align: center; }
+      #content #main div.tablewrap table {
+        border: 0.3em solid #7a200d;
+        border-collapse: collapse;
+        text-indent: 0px;
+        display: table;
+        font-size: 85%;
+        margin: auto;
+        max-width: 85%;
+        overflow-x: hidden; }
+        #content #main div.tablewrap table caption {
+          background-color: #7a200d;
+          color: white;
+          font-weight: bold;
+          border-top: 0.2em solid #7a200d;
+          padding-top: 0.2em;
+          min-width: 15em; }
+        #content #main div.tablewrap table tr th, #content #main div.tablewrap table tr td {
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+          margin: 0;
+          line-height: 1.3em;
+          text-align: left; }
+        #content #main div.tablewrap table tr .center_al {
+          text-align: center;
+          white-space: nowrap; }
+        #content #main div.tablewrap table tr .ind {
+          text-indent: 1em; }
+        #content #main div.tablewrap table tr .remark {
+          font-size: 80%; }
+        #content #main div.tablewrap table tr:nth-child(even) {
+          background-color: rgba(122, 32, 13, 0.15); }
+        #content #main div.tablewrap table tr:first-child {
+          background-color: #7a200d;
+          color: white; }
+      #content #main div.tablewrap table.cblock tr:not(:first-child) {
+        background-color: transparent; }
+      #content #main div.tablewrap table.cblock tr:not(:first-child).colored {
+        background-color: rgba(122, 32, 13, 0.15); }
+    #content #main div.tablewrap.full table {
+      width: 85%;
+      margin: 0 auto;
+      display: table; }
+    #content #main div.tablewrap.moff {
+      display: inline-block; }
+      #content #main div.tablewrap.moff table {
+        margin: 0;
+        margin-left: 1em; }
+    #content #main .fl {
+      float: left; }
+    #content #main .fr {
+      float: right; }
+    #content #main .fg {
+      height: 10px;
+      width: 1em; }
+    #content #main .clearer {
+      clear: both; }
+    #content #main .clearr {
+      clear: right; }
+    #content #main .clearl {
+      clear: left; }
+    #content #main div.link_chunk {
+      border-style: solid;
+      border-width: 0.2em;
+      border-color: #7a200d; }
+      #content #main div.link_chunk a.chsel {
+        display: block;
+        position: relative; }
+        #content #main div.link_chunk a.chsel div.imgholder {
+          display: block;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          padding: -0.1em 0em -0.1em 0em;
+          opacity: 1;
+          background-color: #fdf1dc;
+          -moz-transition: opacity 0.4s;
+          -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s; }
+        #content #main div.link_chunk a.chsel p {
+          z-index: 3;
+          position: relative;
+          margin: 0;
+          padding: 0.5em;
+          color: #7a200d;
+          font-size: 150%;
+          font-family: "Metamorphous", serif;
+          font-weight: bold;
+          background-image: linear-gradient(to right, #fdf1dc, #fdf1dc, transparent);
+          -moz-transition: color 0.4s;
+          -webkit-transition: color 0.4s;
+          transition: color 0.4s;
+          -moz-transition: background-color 0.4s;
+          -webkit-transition: background-color 0.4s;
+          transition: background-color 0.4s;
+          -moz-transition: background-image 0.4s;
+          -webkit-transition: background-image 0.4s;
+          transition: background-image 0.4s; }
+      #content #main div.link_chunk a.chsel:hover p {
+        color: white;
+        font-weight: normal;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-image: none; }
+      #content #main div.link_chunk a.chsel:hover div.imgholder {
+        opacity: 1; }
+
+span.select2-dropdown {
+  outline: none;
+  border: none;
+  border-bottom: 0.2em solid #bbbbbb; }
+  span.select2-dropdown li.select2-results__option--highlighted {
+    background-color: #7a200d !important; }
+
+/*# sourceMappingURL=content.css.map */
