@@ -8,6 +8,6 @@ if (substr($rootpath, -1) != "/" && $rootpath !== "") $rootpath = $rootpath . "/
 				<a href="<?= $rootpath?>chapters/01_bruma/">Bruma and Piukanda</a>
 				<a href="<?= $rootpath?>chapters/02_skyrim/">Retrieving the Bal Falruhn</a>
 				<a href="<?= $rootpath?>chapters/03_cheydinhal/">Chaos in Cheydinhal</a>
-				<a href="<?= $rootpath?>chapters/05_leyawiind/">Leyawiin Lurkers</a>
+				<a href="<?= $rootpath?>chapters/05_leyawiin/">Leyawiin Lurkers</a>
 			</div>
 		</span>
